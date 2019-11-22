@@ -1,0 +1,13 @@
+<!--t Tip: Download Playstation Games With Amazon t-->
+<!--tag 2013,archive,thinkboxly,tutorials,web tag-->
+<!--image /content/images/tip-download-playstation-games/PSNCardsHero_AU_vf31-1024x447.jpg image-->
+  
+n former days, the famous online retailer Amazon had a section containing extensive listings for downloadable PS3 titles. It was sort of like a second Playstation Network where shoppers could give their money to Amazon, whom they trusted over Sony, and in exchange get redeemable codes for their Playstations. It seemed like a good setup all around, but for reasons unknown Amazon has closed the service and shows no intent on reopening it. The hacks of 2011 are well behind us now and Sony has made every effort to regain the trust of their customers, but some may still prefer not to put their credit card information into their console. If that sounds like you, then you’re in luck: there is still a way.  
+  
+Before we go any farther, let’s be quite clear: there is no more downloadable PS3 library to browse on Amazon. It’s gone. However, there is an alternative: instant codes.  
+  
+Now, of course Playstation gift cards aren’t a new thing, and if it strikes your fancy you can pick one up at participating brick and mortar stores. But what happens to be somewhat hidden away in a corner of Amazon’s vast catalogue is far more convenient. Amazon offers gift codes in $20 and $50 quantities, and they are available immediately upon purchasing. You will still need to enter your billing address, but fear not: this isn’t a physical card that will get mailed to you (or if it is, you landed on the wrong page—make sure you go for the instant code delivery!) and after going through the normal checkout process, your code will be ready for redeeming, stat.  
+  
+If you were hoping only to spend the exact amount of a game, these options might seem mildly disappointing, but actually a lot of available titles run for $19.99 and $49.99 and don’t require sales tax, making the gift codes pretty darn near perfect. But even if your game of choice costs something else, chances are good that there’s some DLC available to consume the left over funds. However, I’d recommend you hang onto it and save up for another game instead. Many of the available PS1 and PS2 classics which have been converted for PS3 are seriously good buys and run at discounted prices to boot. It’s up to you—PSN as always. But now you can join in the fun and still rest easy knowing that your info is secure with one of the most trusted sites on the web.  
+  
+[Check out PSN codes on Amazon](http://www.amazon.com/gp/product/B004RMK4BC/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B004RMK4BC&linkCode=as2&tag=think03f-20)

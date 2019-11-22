@@ -1,0 +1,7 @@
+<!--t Edge Display Scaler Minor Update (v1.2.2) t-->
+<!--tag 2015,archive,dev,thinkboxly,updates tag-->
+<!--image /content/images/edge-display-scaler-minor-update-v122/EdgeEngineLogo-1024x512.png image-->
+  
+[Edge Display Scaler](https://marketplace.yoyogames.com/assets/1257/display-scaler-edge-engine) has received another minor update, bringing the latest version up to 1.2.2. This version is all about updating a new feature added in 1.2.0, which embarrassingly was actually incomplete when it first arrived. That feature is edgeds\_view\_fit, a sort of 'training wheels' script to give new Edge DS users a simple aspect ratio scaling solution without having to entirely rework old projects for 1:1 scaling. The new version of the script still functions the same way, however it will now scale a total of three views at once, one acting as the actual game view and the other two acting as letterboxes, giving the developer control over what goes in the black borders.  
+  
+This can be a solid color, a repeated texture, or even GUI elements--anything you can fit in a normal view. In general I highly _discourage_ this approach, but it's been a highly requested feature since Edge DS's first release, and I hope this new version will better suit the needs of those who requested it. Be sure to update your Marketplace Library and check out [the latest documentation](http://www.edgeengine.net/p/edge-display-scaler-reference-guide.html) to learn proper usage if you intend to use edgeds\_view\_fit in your projects!

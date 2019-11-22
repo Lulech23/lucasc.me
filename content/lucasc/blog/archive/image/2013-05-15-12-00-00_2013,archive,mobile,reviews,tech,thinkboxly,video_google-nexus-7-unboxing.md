@@ -1,0 +1,27 @@
+<!--t Google Nexus 7 Unboxing & First Impressions t-->
+<!--tag 2013,archive,mobile,reviews,tech,thinkboxly,video tag-->
+<!--image /content/images/google-nexus-7-unboxing/Nexus71.jpg image-->
+  
+You might have seen that after being staunchly anti-tablets, I decided to get one for myself. My choice? The current Android flagship tablet device: the Google/Asus Nexus 7. There are already dozens of Nexus 7 reviews out there and I agree with their general consensus, so rather than reiterate what has already been said so many times I intend to unbox the Nexus 7 and to give my impressions on having and using a tablet in general, speaking as someone who used to be against the product category. Let’s get started.  
+  
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/sJy4JGZCUtw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+  
+  
+So I’ve been using my Nexus 7 for over a month now, and I must say I quite agree with the general census out there that this is overall one of the best Android tablets on the market. Direct support from Google is great, since it means updates are available on day one instead of having to wait for a carrier to catch up, and there’s no bloatware to speak of out of the box. The hardware is very fast and Tegra 3 is great for mobile gaming. I’ve never had anything crash. The nit-picky will notice the screen is slightly lacking in saturation and contrast compared to the competition, but is nevertheless very crisp and clear. All this and more has been said about the Nexus 7 over and over, and I am saying it again because it’s all true.  
+  
+But this is a follow up to a previous post I ran talking about my reasons as a former ‘anti-tablet guy’ for picking up a tablet of my own. Has my experience with the Nexus 7 proven me wrong about the uselessness of tablets in general? Happily, yes—but I still stand by my previous statements about the pointlessness of the iPad. Hear me out on this, because it’s not fanboyism or bias that causes me to say this. The fact of the matter is, tablets are middle devices, and they are rightly being marketed as such. When I’m on my tablet, I find that Android apps and games are the right level of useful and enjoyable on the go without being as utilitarian and cumbersome as my laptop. But I also find that I use those apps much like I use their desktop OS equivalents. It’s essentially a smartphone that I use like a laptop. Now that means much of what I do on my Nexus 7 is simply not possible on an iPad, at least not without jailbreaking, and fighting the uphill battle with Apple just to use a device the way you want to is a wearisome and frustrating process. I am aware of and can accept the fact that there are people out there who only require basic smartphone functionality and the iPad meets their needs, but that fact cannot exclude the other fact that a lot of iPad owners bought their device on the basis of brand popularity and did not do their homework to discover something else that actually suits all of their needs instead of just one or two.  
+  
+But I digress. Suffice it to say that the question of if I would be as disappointed with the Nexus 7 as I have been with Apple products has been answered in the negative. An iPad might give the best showing on benchmarks, but when it comes to practical, daily use, the Nexus 7 is infinitely superior.  
+  
+Remember the 90’s? Remember the Palm PDA’s we all had? Ok, so maybe we didn’t all have them, and maybe the PDA I remember most fondly was produced in 2005 (I did own a Palm V before that, though), but they made few advances from the 90’s aside from color screens and expandable storage. What made the Palm OS experience so great for me and so many others? An open, licensed OS with support for numerous hardware configurations. Sure, Palm OS was closed-source, but configuration options were practically unlimited. Power users even figured out how to run Linux on the things. Developing for Palm OS was easy, and so we saw all sorts of creative applications from people that otherwise wouldn’t have gotten the opportunity to develop them.  
+  
+Palm may be long gone now and HP is just sitting on its legacy, but Android is its spiritual successor in my mind. Everything that made the great portable computers of the past great is present in Android and looking better than ever. Google really found its footing with the Nexus 7, arguably for the first time. Previous Android handsets and tablets may have featured these same essential traits, but they were not yet mature. Now, I am comfortable saying that Android has reached the mark in both the software and hardware department.  
+  
+In some ways I’m still trying to see where the Nexus 7 fits into my daily routine, and by no means would I recommend tablets as total laptop replacements, but there’s no denying that for what tasks the Nexus 7 handles, it handles much more conveniently than a full fledged computer.  
+  
+Am I a bit late to the game? Yes, rumors abound that the next Nexus 7 will be released soon and will ditch Tegra 3 for Qualcomm hardware, and if you can stand to wait for it, I recommend you do so. But the openness of Android has enabled a lot more longevity than its closed competitors. I for one am certain that I will enjoy my Nexus 7 for several years to come.  
+  
+![](/content/images/google-nexus-7-unboxing/scorebar-q-great.png)  
+![](/content/images/google-nexus-7-unboxing/scorebar-x-great.png)

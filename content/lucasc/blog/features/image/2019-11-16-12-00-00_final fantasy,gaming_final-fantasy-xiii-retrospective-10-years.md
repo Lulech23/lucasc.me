@@ -1,0 +1,35 @@
+<!--t 10 years later, Final Fantasy XIII hits a little too close to home t-->
+<!--tag final fantasy,gaming tag-->
+<!--image /content/images/final-fantasy-xiii-retrospective-10-years/ffxiii-lightning-strike.jpg image-->
+
+Videogames have played a strangely significant role in my life. By now I'm at the age where it's a little embarrassing to admit, but I firmly believe there's no shame in saying so. Something about the kind of stories videogames are apt to tell has resonated with me on more than one occasion in such a way that shapes my personal journey. Some provide a microcosm for learning new life lessons and skills, while others somehow encapsulate a particular era or phase of personal development, assisting in some much-needed introspection. Maybe they're not even the best of games, but they're the ones that, for whatever reason, manage to stick with me years later.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4H1UEHX_7X8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+We're now dangerously close to crossing the 10th birthday of Final Fantasy XIII, which released in Japan on December 17, 2009. Back in the day, it was an infamous case of a game hyped to greater heights than it could possibly reach, but I'm of the opinion that time has been kind to it and the sub-series it spawned--albeit for reasons I doubt the creators even intended.
+
+Say what you will about its many mistakes. One thing Final Fantasy XIII got right was its target audience: millennials. As a millennial myself, I typically hate the term and everything it stands for in the current climate, but bear with me here. No matter your opinion on the game, Final Fantasy XIII's primary protagonist, Lightning Farron, was an undeniable gaming icon in her time. Heck, the entire third game in the series, Lightning Returns, was little more than a Lightning cosplay fest. But while she was known more for her design than her character, both now feel *so very 2010* that Final Fantasy XIII as a whole has become an interesting time capsule of millennial struggles and attitudes.
+
+![full](/content/images/final-fantasy-xiii-retrospective-10-years/ffxiii-lightning-duodecim.jpg)
+
+In 2010, every millennial wanted to be Lightning. Bright, dramatic, although fleeting. That's not her real name, by the way. Her real name is Claire Farron, but she chose the alias Lightning because, well, it seems deep and symbolic somehow. Claire felt the need to grow up, take responsibility, become an adult... and in the process did something--let's face it--a little childish. Sound familiar?
+
+Despite (or rather, because of) her own insecurities, Lightning sees the world in black-and-white. Sanctum Fal'Cie good, Pulse Fal'Cie bad. In the game's universe, Fal'Cie are mysterious supernatural beings that govern the regions of the world. They also have a habit of enslaving anyone who gets too close, physically branding them L'Cie until they complete whatever task is assigned to them--or suffer the consequences. Except, completing the task is hardly winning either, as you'll turn into crystal. It's a lose-lose situation, which makes all L'Cie losers too, right? Lightning certainly thinks so… until she and her companions become L'Cie themselves.
+
+I hope I don't have to draw the real-life parallels here. Coming of age is invariably an experience of fruitlessly resisting adulthood while reality gains greater and greater nuance. Criticize adults all you want, but eventually, you're doomed to become one. Same thing applies to social outcasts. Double whammy, Square Enix!
+
+![full](/content/images/final-fantasy-xiii-retrospective-10-years/ffxiii-2-cast.jpg)
+
+But it doesn't stop there. In Final Fantasy XIII-2, the story takes a wild twist. Following Lightning's great awakening in the first game, she's now trapped in a battle against chaos itself as it threatens to rip the world apart. It's a battle she never asked for, nor understands why she of all people must fight. It's not even clear if there's a winning option. But it's her battle, and she accepts it with grim resolve. 
+
+This game released in 2011, when most millennials were reaching legal adulthood and realizing what a mess we were inheriting--a reality the rest of the world is only just now grappling with today. XIII-2 was hardly an example of great storytelling, but for a personally depressing period of time, it was cathartic. Much of the game followed Lightning's sister Serah, a much softer, more vulnerable character, and a suitable contrast from the harsh world around her. Serah was essentially a victim from the start, being one of the first to get branded a L'Cie in Final Fantasy XIII. Up to that point, unlike Lightning, Serah had no social struggles and was well-positioned for a normal life. Circumstances just had a habit of robbing her of it. Escape, you see, is not as simple as achieving the status quo.
+
+![full](/content/images/final-fantasy-xiii-retrospective-10-years/ffxiii-lumina.jpg)
+
+Fortunately, there is Lightning Returns. Released in 2013, the game focuses again on Lightning herself and her ongoing struggle to accept her own identity. Literally, that's what the game is about, as she even battles against her own alter-ego taken physical form. There's also some off-the-rails plot about saving the world, but you probably shouldn't think too hard about that. Still, it's impossible not to have some sympathy for the overall message: defiance. Defiance against oneself first and foremost, and the world's self-destruction second. And when Lightning finally succeeds, an entirely new world is opened up to her. (**Spoiler alert:** [its ours.](https://www.telegraph.co.uk/fashion/people/final-fantasy-character-lightning-on-starring-in-louis-vuitton-c/))
+
+![full](/content/images/final-fantasy-xiii-retrospective-10-years/ffxiii-new-world.jpg)
+
+You see, for all its pandering to edgy teenagers, Final Fantasy XIII is neither critical nor flattering of them. It empathizes with their struggles, but demands responsibility, even sacrifice in exchange. That sacrifice begins with your own ideas about the world you want to change. Things are never as straightforward as they seem. People different from you may be your greatest allies, while your own kind turn their back at the first sign of open-mindedness, perceiving it as a threat to their narrow worldview. And yet, there may still be enough truth to their "outdated" ideas that ignoring them entirely could be fatal. How is anyone supposed to navigate such a complicated, messy world, let alone make it a better place?
+
+It's not that Final Fantasy XIII is a masterpiece of portraying any of these issues. In fact, sometimes it's downright kludgy. But looking at it now, ten years later, it's impossible not to see my younger self looking back at me. I'd like to think I've grown up a little since then.

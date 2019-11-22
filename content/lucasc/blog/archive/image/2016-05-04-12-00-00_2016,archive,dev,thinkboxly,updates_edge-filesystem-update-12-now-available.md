@@ -1,0 +1,9 @@
+<!--t Edge Filesystem Update 1.2 Now Available! t-->
+<!--tag 2016,archive,dev,thinkboxly,updates tag-->
+<!--image /content/images/edge-filesystem-update-12-now-available/EdgeEngineLogo-1024x512.png image-->
+  
+You asked, and while it was a while in the making, Edge Engine is delivering! Edge Filesystem, or Edge FS for short, is a comprehensive save/load system that from the beginning has featured whole-file encryption to prevent users from tampering with saved values. However, some felt that the included form of encryption was not strong enough and requested something more secure for storing especially sensitive information. As of version 1.2, you can put all fears of security to rest. The new update comes packing support for military-grade high-level encryption on ds\_maps, a form of data structure ideal for storing pairs of keys and values--similar to an .ini file, but in pure code. This means it is now safe to store passwords and in-app purchase data in ds\_maps saved with Edge FS, as only your game and your game alone will be able to read the information contained within. Not convinced? Take a look at [this webpage](http://www.eetimes.com/document.asp?doc_id=1279619) describing the sheer improbability of AES encryption being cracked with brute force. You could say it literally can't even be done in a billion years.  
+  
+If that sounds interesting to you, you know what to do! If you already own Edge FS, simply download the update through your GameMaker Marketplace library. Otherwise you can check out more for yourself at [the marketplace, here](https://marketplace.yoyogames.com/assets/2488/save-filesystem-edge-engine) or by heading on over to [the dedicated Edge Engine portion of the site](https://lucasc.me/post/edge-engine).  
+  
+And stay tuned--there's much more exciting things to come from Edge Engine very soon!

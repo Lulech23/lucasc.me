@@ -1,0 +1,33 @@
+<!--t OStober! Windows 8.1 – Two Years With the New Microsoft t-->
+<!--tag 2013,archive,features,tech,thinkboxly tag-->
+<!--image /content/images/ostober-windows-81-two-years-with-new/homescreen-580-75-5B1-5D1.jpg image-->
+  
+October is going to be a big month for a lot of people in the tech industry. Popular Linux distribution Ubuntu has been regularly releasing updates every April and October for nearly a decade, and earlier this year Microsoft confirmed that their game-changing Windows 8 operating system would be getting its first major update in October as well. If there’s anything that gets a geek excited it’s upgrades, so this week ThinkBoxly will be featuring a special duo of posts covering both new editions of these popular operating systems. First up: Windows 8.1, releasing October 18!  
+  
+I’ve been using Windows 8 ever since the first Developer Preview released a couple of years ago. While many have found the new features—especially the Start Screen—a bit difficult to adjust to, personally I found many of the changes very refreshing and useful. In some ways Microsoft worked smartphone and tablet paradigms into the desktop environment, and in other ways they recreated the smartphone and tablet environment with desktop friendly paradigms. While some claimed that the new OS was only designed for touch screen use, this is patently untrue; Microsoft actually built two very different navigational styles into Windows 8 to accommodate both touch and keyboard/mouse setups. While it had a learning curve, Windows 8 offered a great new approach to the long-running operating system and a solid, speedy core system to boot (pun completely intended). All the same, we humans are creatures of habit and some of us have a hard time dealing with change. With Windows 8.1, Microsoft hopes to improve the user experience for all and make it a bit easier transition for some.  
+  
+
+## What’s New
+
+  
+**Greater personalization:** Let’s be honest: the first thing we all thought of when we saw the new Start Screen was “I wonder how I’ll be able to tweak that…” Truth be told, options available in 8.0 were rather disappointingly slim. That’s all changed now, though, as Microsoft has built in a variety of enhancements to allow users the freedom to personalize pretty much however they see fit. There are now more backgrounds for the Start Screen than before, and colors on each element—even on old backgrounds—are totally tweakable. You can also choose not to use any of these backgrounds at all and instead set your desktop wallpaper as the wallpaper for the Start Screen as well.  
+  
+**Enhanced Start Screen Features:** There’s also a new extra small and extra large tile size to work with, so you can have 1/4 and 4×1 tiles to capitalize on information you really care about and push the rest into the background without moving it off the Start Screen completely. And if you like grouping things together all neat and tidy, no longer must you zoom out to name different sections of your Start Screen—renaming can happen simply by clicking directly on the group title. Moving tiles around has also been enhanced so as to avoid accidental moves and to enable moving multiple tiles at once. On touch devices like the Surface, Microsoft has ditched the drag-down-to-select action in favor of long-pressing tiles (just like iOS and Android). The All Apps area hasn’t missed out on the updates, either: to ease the slowness of sorting through an alphabetized list, your most commonly used and most recently installed apps will now show up first, with the full list showing up after. And last but not least, the global Search function has been enhanced to eliminate the need for selecting an individual app to search within, as well as the need to be on the Start Screen, not the Desktop, to run a search in the first place.  
+  
+**Desktop Tweaks:** Speaking of the Windows Desktop (yes, it’s still there) Microsoft has brought back what is probably the most requested feature: a Start button on the taskbar. No, this does not bring back the old Start Menu, but it makes the transition to Windows 8 a bit friendlier for folks struggling with all the newness. Such people can also now skip booting into the Start Screen to land on the desktop first thing, and choose to open the All Apps menu when hitting that shiny new Start button to bypass seeing all those overwhelming tiles. In other words, if you can’t adjust, Windows 8.1 is here to hold your hand.  
+  
+**App Updates:** While the Windows App Store is generally struggling to snag a quality catalog, first-party apps have always been pretty darn slick. That being said, there were also a number of glaring issues with Microsoft’s first try at a number of things. We’ve seen a few small fixes here and there, but at last Microsoft is ready to unveil some major and much needed enhancements for included apps. You’ll also now have the option of snapping more than two apps at once, and you’re not limited to just the 1:5 scheme anymore—you can go half-and-half or in thirds, too.  
+And more: this list only hits the bulk of what to expect in Windows 8.1—there’s even more to look forward to in the actual release!  
+  
+
+## What’s Old
+
+  
+Windows 8.1 is different than the Service Packs of previous iterations in that it adds and alters more than just some libraries to support new technologies, but it is much the same in that what we have here is an incremental step forward rather than a big leap. In fact, if you ask me the reintroduction of a taskbar Start button is a ridiculous step backwards. There were plenty of Start buttons before—one on the bottom left, one in the Charms bar, and two on the average keyboard. The fact that so many people couldn’t adjust to this setup that Microsoft had to put in yet another Start button boggles the mind. But besides that and the obvious app updates and Start Screen tweaks, pretty much everything else is business as usual for Windows 8 users.  
+  
+
+## Should You Upgrade?
+
+  
+**Yes!** If you’re currently running Windows 8, then the upgrade to 8.1 is totally free. The new features are well worth the time to download and install, and Microsoft is pushing hard for 8.1 to take over the whole Windows 8 scene, so there’s really no reason not to update. If you’re still using Windows 7 or older the step up will cost you and be a bit more of a hassle to get going, but there’s never been a better time to get in on the new Microsoft. And if you’re still on Vista or XP you should definitely make Windows 8.1 a priority, and that’s the end of it.  
+Windows 8.1 releases on October 17 for download and the 18th for retail, both as an install CD and preinstalled on all new Windows 8 PCs.

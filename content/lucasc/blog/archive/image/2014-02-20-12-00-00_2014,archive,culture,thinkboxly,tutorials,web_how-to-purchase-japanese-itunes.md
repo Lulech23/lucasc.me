@@ -1,0 +1,34 @@
+<!--t How to Purchase Japanese iTunes Music/Apps in the USA t-->
+<!--tag 2014,archive,culture,thinkboxly,tutorials,web tag-->
+<!--image /content/images/how-to-purchase-japanese-itunes/jp-itunes1.png image-->
+  
+Piracy. If you’ve been around the internet very long, you’ve certainly heard this word plenty of times. There’s even a good chance you’ve heard a variety of perspectives on the issue, ranging from diametrically opposing it to considering it free advertising. And in truth, piracy is stupid: you’ll likely be locked out from certain features, get lower quality content than the real thing, and constantly have to battle countermeasures. But worst of all, the content creators are stripped of the support they deserve for their work. Of course, things are not always so clear cut. What if the content creator has not published their work in your country? Is it possible to steal what there never was a license for in the first place? As foreign media continues to rise in popularity here in the US of A, more and more people are asking themselves this question. Answer it however you will—your position is difficult to defend, no matter what stance you take. But what if you could avoid the question entirely? Isn’t there a better way?  
+  
+I remind you this is the internet. Of course there is! Supporting your favorite content creators overseas is always the best way, and in this world where everything can be turned into a business there are lots of fine folks around the interwebs who are happy to help you do just that…without buying a plane ticket.  
+  
+Note: the following post contains gray matter. No, not the stuff between your ears, the sort of thing that may tread upon the fringes of a EULA or two. This post is purely informative—you bear responsibility for your own actions. That being said, at this point in time no related authority has spoken out against the practices described ahead. The likelihood of there being any risk is minimal, nevertheless proceed at your own risk.  
+  
+
+## Japan-Codes
+
+  
+[![](/content/images/how-to-purchase-japanese-itunes/jp-codes1-557x3601.png)](/content/images/how-to-purchase-japanese-itunes/http://www.japan-codes.com/)  
+One such place is [Japan-Codes](http://www.japan-codes.com/). Though certainly not the only site of its kind this one in particular has a nice balance of product selection, cost, and user-friendliness. Here you’ll find everything from iTunes to Amazon to PlayStation gift cards in Japanese Yen, purchaseable in USD. Rather than open a bank account in Japan, you can simply get the gift card amount you require for an individual purchase on an official channel. No piracy necessary, and you get to show your support. Pretty nifty, yes?  
+  
+Transactions are handled via PayPal, so you can feel safe entrusting Japan-Codes with your payment information or bypass the credit card entirely by preloading your PayPal account with the necessary funds. Purchased codes are not generated automatically, but in my experience email delivery has always been prompt (within a couple hours of purchasing—not bad for manual labor).  
+  
+Now for those who don’t know, 1 Yen roughly equals 1 US penny, so add a decimal into the Yen value of a gift card and you basically get its USD equivalent. However, you’ll find that on Japan-Codes and similar services a 1500¥ card doesn’t run you $15.00. As I alluded to earlier, this is a business. You can expect a decent markup, but it’s really only fair considering those running the service have to take a paycheck somehow, and manually processing gift codes takes a lot of time and effort.  
+  
+
+## Setting up an Account
+
+  
+Of course once you’re armed with some foreign currency you’ll need to open an account to match. Today we’ll just be looking at iTunes, but the process is similar for other services. As always, Google is your friend.  
+  
+Open iTunes and navigate to the main store page. Scroll to the bottom, and off to the right you’ll find a circular flag icon indicating what country’s iTunes store you are browsing. Click on it and you’ll be presented with a country selection screen. Find Japan in the list (under the ‘Asia Pacific’ group) and select it. This will take you back to the store page, and you’ll notice the selection of featured content has changed a bit. You’ll also find that you’re no longer signed in. iTunes accounts aren’t universal, so you’ll have to open one for each country’s store you wish to access. Due to a glitch in iTunes, getting started here is a bit awkward. First, find any free app on the app store (yes, any free app. Trust me.) Click the ‘Free’ button that would usually start the download. Since you don’t have any account yet, rather than download the app a login prompt will appear. Choose ‘Create Apple ID’, and run through the basics (and again, you’re responsible for your own actions in choosing whether or not to accept the Terms and Conditions). Note that you cannot use the same email address for multiple countries.  
+  
+Now, when you reach the ‘Provide a Payment Method’ screen you’ll find that next to a few options of credit cards is a ‘None’ option. This will allow you to roll with a gift card alone, but for some odd reason it wouldn’t have shown up here had you attempted to open a new account directly without first trying to download a free app. There’s Apple for you.  
+  
+With ‘None’ selected you can enter the gift code you purchased earlier in the space below and then move on to the billing address section. This is where things get a bit sticky. You can’t use your actual US address, and further complicating things addresses in Japan work a bit differently than what you’re used to. Your easiest bet is to use the address of someplace such as [Tokyo University](https://www.google.com/#q=tokyo+university+address) and carefully piece together the information into the iTunes form. (Depending on how you interpret the Apple’s Terms this would fall in the realm of ‘accurate’ information, as it is not a fictional address or phone number or the private information of another individual. Debate that as you will.) Also unfamiliar to non-Japanese speakers will be two lines of information for entering your name. The first line is intended for Kana, the characters of the Japanese alphabet, and the second line for English. Serious otakus may freely enter their names in Japanese, but don’t worry if English is all you can muster—simply enter your name normally in both fields.  
+  
+Well, the worst is now over and you have yourself a Japanese iTunes account loaded with cash—er, _genkin_. All that’s left is for you to find some music and/or apps to spend it on! Apple allows each user to sync up to five accounts with one iOS device, so don’t worry about one overriding the other and erasing all your previous content. Wherever in the world you are, you’re good to go.

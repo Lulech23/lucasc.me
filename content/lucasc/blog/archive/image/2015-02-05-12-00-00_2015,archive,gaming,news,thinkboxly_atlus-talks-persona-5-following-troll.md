@@ -1,0 +1,30 @@
+<!--t Atlus Talks Persona 5 Following Gaming’s Longest Troll t-->
+<!--tag 2015,archive,gaming,news,thinkboxly tag-->
+<!--image /content/images/atlus-talks-persona-5-following-troll/wpid-screenshot_2015-02-05-13-43-061-2.png image-->
+  
+Why does a company run a live stream for 30 hours mostly showing off already-released products? Why, to build up hype for new ones, of course! And that’s precisely what beloved Japanese game developer Atlus has done for the past day and a half with the Persona Super Live event (don’t you just love Japanese titles?). After hours and hours of trailers and music playlists featuring Persona 4 Golden, Persona 4 Arena Ultimax, Persona Q, and even a live broadcast of the first two of three Persona 3 film adaptations, Atlus has finally come forth with the goods everyone’s been waiting for: Persona 4: Dancing All Night.  
+  
+OK, OK, I jest. But for real, Atlus did give us [a new trailer](https://www.youtube.com/watch?v=FTSfZFNNROE) and [the opening theme song](https://www.youtube.com/watch?v=KnLIwC713hU) to this Hatsune Miku-meets-Persona mashup game set to release in Japan for the Playstation Vita on June 25 and an undisclosed later date this year in the west. Really, you should check them out. Even if fast-paced rhythm games aren’t your thing, revisiting the Persona 4 cast one more time is never a bad decision, and don’t forget there’s a visual novel-style story packed in a la Persona 4 Arena to look forward to.  
+  
+But all digressions aside, yes, Persona 5 is the big news everyone was waiting for, and yes, Atlus did finally break silence on the game and give us some actual gameplay and a proper trailer. Go ahead, give it a watch. I’ll wait.  
+  
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/oc_9r4wifFc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+  
+  
+The time gap between Persona 4 and Persona 5 may be the longest in the series’s history, but it looks like the wait will pay off. Persona 5 is clearly Atlus’s most ambitious game yet, with more action elements than before and detailed cel-shaded 3D environments. It’s also worth noting that the game’s camera takes a more traditional third-person approach, bringing the player into the protagonist’s shoes instead of looking on at some distance. But make no mistake: this is still the Persona we all know and love. Everything from the music, art style, character design, and signature gameplay elements is all there. Our timeless friend Igor makes a return, and from the looks of things you’ll have another pet tagging along (this time a cat as opposed to Persona 4’s fox and Persona 3’s dog, each of which represents something about its respective game) and instead of evoker guns and magic eyeglasses, the cast of Persona 5 will don Victorian masks during their explorations—perhaps the most overt reference to the Jungian psychology the series takes its name from.  
+  
+![](/content/images/atlus-talks-persona-5-following-troll/wpid-screenshot_2015-02-05-13-43-061-2.png)  
+  
+The story also appears to take on a bit darker tone than all the Persona 4 games and anime we’ve been getting at a consistent clip for the past seven years, instead harkening back to the series’s roots for its mood and atmosphere. In an [interview](http://www.famitsu.com/news/201502/05070855.html) with Japanese gaming magazine Famitsu (translated by [Gematsu](http://gematsu.com/2015/02/persona-5-director-discusses-characters-themes-development)), Persona 5 director and producer Katsura Hashino said that the new cast is a little “rougher around the edges” than we’re used to—they’re “on the run for doing what they think is right.”  
+  
+“I don’t think it’s a stretch to say in this day and age that there are a lot of people out there who feel like they aren’t moving forward, that they have no future, and carry a lot of weight on their shoulders every day,” Hashino went on to say. “They’re stuck between a rock and a hard place, emotionally speaking; on the one hand, they might not be keen on living by the same rules and values that defined previous generations, while still lacking the will to go out and actually break those barriers down themselves. That dark side of society is a central pillar to the game we want to make with Persona 5.”  
+  
+[![](/content/images/atlus-talks-persona-5-following-troll/wpid-screenshot_2015-02-05-13-43-191-1.png)](/content/images/atlus-talks-persona-5-following-troll/wpid-screenshot_2015-02-05-13-43-191-1.png)  
+  
+Hashino is careful to note, however, that this is still at its heart a Japanese highschool game, and the trailer above even demonstrates as much, though from the look of things it may not be the friendliest environment this time around.  
+  
+“In the midst of all that, though, you got these high school punks who are trying to bite back at a world that’s trying to pin them down. If our game can give people a little courage to keep going in their day to day lives, to face things head on and do something with themselves, then we’ll have done our jobs here.”  
+  
+Persona 3 and 4 got their kicks by putting the player in the position of an average highschooler who has to learn how to deal with having special powers. Though it’s hard to tell from just one trailer, Persona 5 looks like it will find its hook in the opposite effect: being a very extraordinary highschooler who has to pass as average to meet the status quo. Only you aren’t exactly Superman—you’re Clark Kent with a Superman complex. Again, that’s pure speculation, but it will be fun to see where Atlus takes this bold new approach. Unfortunately, at this point all we know is that development is nearing the finish line and the 2015 worldwide release still stands. When exactly we can expect to see Persona 5 this year remains a mystery, but whenever it hits, both Playstation 3 and Playstation 4 gamers should probably put down any other ongoing gaming activities and give this one their full attention for a while. Hopefully from this point on Atlus will be more open about the game, so stay tuned for more information on Persona 5 as it comes. And Persona 4: Dancing All Night. Really!

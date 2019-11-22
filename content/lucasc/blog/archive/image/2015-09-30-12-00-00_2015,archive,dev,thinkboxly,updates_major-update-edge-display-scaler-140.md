@@ -1,0 +1,11 @@
+<!--t Major Update! Edge Display Scaler 1.4.0 Rewrite Released! t-->
+<!--tag 2015,archive,dev,thinkboxly,updates tag-->
+<!--image /content/images/major-update-edge-display-scaler-140/EdgeEngineLogo-1-1024x512.png image-->
+  
+It's hard to believe, but in a couple months Edge Display Scaler--the first Edge Engine module to be released--will be turning a year old. It's been quite the year, with multiple new Edge Engine modules developed, iterated, updated, and in some cases, even revolutionized. As it stands, all currently-released modules have reached a sort of parity in terms of both quality and the user experience...except Edge Display Scaler. As the first module, it naturally carried along with it the most baggage from being a new venture. But now it reaches a new stage of development as the entire thing has been re-edited and in many cases re-written from the ground up.  
+  
+Edge Display Scaler 1.4.0 is not the display scaler you once knew--it's one of the most extensive rewrites in the Edge Engine family, and while it accomplishes many of the same tasks as before, it now does so with better, more consistent, more user-friendly code inspired by user feedback. That means a few important new features, among many: for one, View 0 is no longer required as the scaling view. Any of GameMaker Studio's 8 views can be reserved for scaling, and view scaling can even be disabled entirely under certain scenarios. In addition, all edgeds\_set\_\* scripts now feature DPI scaling with optional override settings so that the feature can be tailored to any display. There are also entirely new scripts for scaling sprites, backgrounds, and views. But don't worry! If you liked or require any one of the old scripts for your projects, they are still included in 1.4.0 in a 'Legacy Scripts' file and will remain there for the next few updates to give everyone a chance to upgrade.  
+  
+Edge DS users, you know the drill: open up your Marketplace Library and download the update now! And as always, new users can pick up the module for themselves at the [Marketplace](https://marketplace.yoyogames.com/assets/1257/display-scaler-edge-engine).  
+  
+Thanks for being a supporter of Edge Engine, and stay tuned: there's some other very exciting news just around the corner! No hints, so check back soon!
