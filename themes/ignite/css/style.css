@@ -817,8 +817,16 @@ BODY
     display: inline-block;
     text-decoration: none;
 	padding: 8px 16px;
-	border: 1px solid currentColor;
+	color: var(--color-primary);
+	background-color: transparent;
+	border: 1px solid var(--color-primary);
 	border-radius: var(--round-radius);
+	box-shadow: none;
+}
+
+.entry-content a[title*="superclick"]:hover {
+	color: var(--color-secondary);
+	border: 1px solid var(--color-secondary);
 }
 
 .entry-content img {
