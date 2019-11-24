@@ -216,46 +216,48 @@ a img {
 
 /* Form styles */
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]), textarea {
-	padding: 1em;
+	padding: 1em 1.5em;
 	width: 100%;
 	color: var(--color-darker-gray);
 	font-family: var(--font-body);
-	font-size: 8pt;
 	line-height: 1.85;
 	background-color: transparent;
 	border: 1px solid var(--color-darker-gray);
-	border-radius: 48px;
+	border-radius: var(--round-radius);
 	outline: 0 !important;
-	text-indent: 1em;
+	transition: all 0.25s cubic-bezier(0.1, 0.3, 0.3, 1);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="file"]):not([type="image"]):valid, textarea:valid {
+	border-bottom: 1px solid var(--color-secondary) !important;
 }
 
 input[type="submit"] {
-	padding: 0.8em;
-	width: 100%;
-	color: var(--color-tertiary);
-	background: var(--color-primary);
-	outline: none;
+    font-size: 0.9em;
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 32px;
+    margin-right: 16px;
+    color: #FFF;
+	background-color: var(--color-primary);
 	border: none;
-	max-width: 13.875em;
-	font-family: var(--font-body);
-	line-height: 1.85;
-	border-radius: 0;
-	-webkit-transition: background 0.2s ease;
-	transition: background 0.2s ease;
-	-webkit-appearance: none;
+    border-radius: var(--round-radius);
+    box-shadow: none;
+	transition: all 0.25s cubic-bezier(0.1, 0.3, 0.3, 1);
 }
 
 input[type="submit"]:hover {
 	cursor: pointer;
-	background: var(--color-secondary);
+	background-color: var(--color-secondary);
 }
 
 input[type="search"] {
-	transition: all 0.15s ease-out;
-}
-
-input[type="search"]:valid {
-	border-bottom: 1px solid var(--color-secondary) !important;
+	font-size: 9pt;
+	line-height: 1 !important;
+	border-radius: 2em !important;
 }
 
 input[type="search"] ~ .fa-search {
@@ -814,14 +816,19 @@ BODY
 }
 
 .entry-content a[title*="superclick"] {
+    font-size: 0.9em;
+    font-family: var(--font-header);
+    text-transform: uppercase;
+    letter-spacing: 1px;
     display: inline-block;
     text-decoration: none;
-	padding: 8px 16px;
-	color: var(--color-primary);
-	background-color: transparent;
-	border: 1px solid var(--color-primary);
-	border-radius: var(--round-radius);
-	box-shadow: none;
+    padding: 8px 16px;
+    margin-right: 16px;
+    color: var(--color-primary);
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--round-radius);
+    box-shadow: none;
 }
 
 .entry-content a[title*="superclick"]:hover {
