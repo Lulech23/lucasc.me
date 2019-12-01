@@ -13,7 +13,8 @@
     <meta property="og:image" content="<?php echo site_url();?><?php echo $p->image; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
     <?php if (publisher()): ?>
-    <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>
+    <link href="<?php echo publisher() ?>" rel="publisher" />
+    <?php endif; ?>
     <link rel="stylesheet" href="<?php echo site_url();?>themes/ignite/css/fonts.css" type="text/css" media="all">
     <link rel="stylesheet" id="font-awesome-css" href="<?php echo site_url();?>themes/ignite/css/font-awesome.css" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="<?php echo site_url();?>themes/ignite/css/style.css" type="text/css" media="all">

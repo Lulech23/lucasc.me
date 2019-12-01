@@ -500,7 +500,7 @@ HEADER/NAVBAR
 }
 
 
-/* Dark Mode slider */
+/* Theme switcher (dark mode slider) */
 #slider-theme-container {
     float: left;
     display: inline-block;
@@ -1694,11 +1694,19 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 1149px) {
+	body {
+		line-height: 1.85;
+	}
+	
 	.main {
 		width: 100%;
 		max-width: 100%;
 		padding: 54px 5% 0;
 		margin: 0;
+	}
+
+	.widget {
+		line-height: 1.66;
 	}
 
 	.sidebar-container.sidebar-primary, .sidebar-container.sidebar-secondary {

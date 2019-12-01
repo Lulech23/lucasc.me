@@ -4,7 +4,7 @@ $('body').addClass('page');
 </script>
 <div class="post profile entry">
     <div class="entry-header" style="text-align: center;">
-        <img width="144" height="144" class="avatar avatar-144 photo" src="<?php echo site_url();?>themes/ignite/images/avatar.png" alt="<?php echo $name;?>">
+        <img width="144" height="144" class="avatar avatar-144 photo" src="/themes/ignite/images/avatar.png" alt="<?php echo $name;?>">
         <h1 class="entry-title"><?php echo $name ?></h1>
     </div>
     <div class="entry-content">
