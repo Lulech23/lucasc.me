@@ -29,9 +29,13 @@ $('body').addClass('post');
          <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a> 
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo date('F d, Y', $p->date) ?></div>
+    <div class="entry-categories">
+        <p><?php echo $p->category; ?></p>
+    </div>  
     <div class="entry-header">
         <h1 class="entry-title"><?php echo $p->title; ?></h1>
+    </div>
+    <div class="entry-meta-top"><?php echo date('F d, Y', $p->date) ?> / <a href="<?php echo $p->authorUrl; ?>" rel="author"><?php echo $p->author; ?></a>            
     </div>
     <div class="entry-share">
         <a target="_blank" class="first" href="https://www.facebook.com/sharer.php?u=<?php echo $p->url ?>&t=<?php echo $p->title ?>"><i class="fab fa-facebook-square"></i></a> 
@@ -53,12 +57,9 @@ $('body').addClass('post');
                 <h4><a href="<?php echo $p->authorUrl;?>"><?php echo $author->name;?></a></h4>
             </div>
             <?php echo $author->about;?>
-        </div>
-        <div class="entry-categories">
-            <p><i class="fa fa-folder-open"></i><?php echo $p->category; ?></p>
-        </div>            
+        </div>          
         <div class="entry-tags">
-            <p><i class="fa fa-tag"></i><?php echo $p->tag; ?></p>
+            <p><?php echo $p->tag; ?></p>
         </div>
         <nav class="further-reading">
             <?php if (empty($next)): ?>
@@ -89,9 +90,9 @@ $('body').addClass('post');
         <div class="further-related">
             <?php $tags = get_related($p->related, true, config('related.count'));?>
             <?php $char = 30; $total = count($tags); $i = 1; if ($total >= 1) { ?>
-                <div class="entry-meta-top">
-                    <h2 class="heading">Related Posts</h2>
-                </div>
+                <p class="related">
+                    <span>Related Posts</span>
+                </p>
                 <div class="related related-posts" style="position:relative;">
                     <?php foreach ($tags as $t):?>
                         <div class="item col-md-4">

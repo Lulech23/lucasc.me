@@ -25,12 +25,15 @@
         <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a>
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo date('F d, Y', $p->date) ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->author; ?>" rel="author"><?php echo $p->author; ?></a>            
-    </div>
+    <div class="excerpt-categories">
+        <p><?php echo $p->category; ?></p>
+    </div> 
     <div class="excerpt-header">
         <h2 class="excerpt-title">
             <a href="<?php echo $p->url; ?>"><?php echo $p->title; ?></a>
         </h2>
+    </div>
+    <div class="entry-meta-top"><?php echo date('F d, Y', $p->date) ?> / <a href="<?php echo $p->authorUrl; ?>" rel="author"><?php echo $p->author; ?></a>            
     </div>
     <div class="excerpt-share">
         <a target="_blank" class="first" href="https://www.facebook.com/sharer.php?u=<?php echo $p->url ?>&t=<?php echo $p->title ?>"><i class="fab fa-facebook-square"></i></a> 
@@ -45,12 +48,9 @@
             <?php echo get_teaser($p->body, $p->url); ?>
             <?php if (config('teaser.type') === 'trimmed'):?>...<p><a class="more-link" href="<?php echo $p->url; ?>"><?php echo config('read.more'); ?><span class="screen-reader-text"><?php echo $p->title; ?></span></a></p><?php endif;?> 
         </article>
-    </div>
-    <div class="excerpt-categories">
-        <p><i class="fa fa-folder-open"></i><?php echo $p->category; ?></p>
-    </div>            
+    </div>           
     <div class="excerpt-tags">
-        <p><i class="fa fa-tag"></i><?php echo $p->tag; ?></p>
+        <p><?php echo $p->tag; ?></p>
     </div>
     <div class="excerpt-comments">
         <?php if (disqus_count()) { ?> 
