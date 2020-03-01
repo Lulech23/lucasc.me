@@ -801,6 +801,14 @@ BODY
 	border-bottom: solid 2px var(--color-light-gray);
 }
 
+.entry-content h1 {
+	margin: 48px 0 16px;
+}
+
+.entry-content h2, .entry-content h3 {
+	margin: 32px 0 -8px;
+}
+
 .entry-content a {
 	color: var(--color-secondary);
 	text-decoration: none;
@@ -882,7 +890,7 @@ BODY
 	position: relative !important;
     max-width: 100%;
     display: block;
-	margin: 0 auto;
+	margin: 24px auto;
 	width: 878px;
 	height: 494px;
 	border-radius: var(--round-radius);
