@@ -1,6 +1,8 @@
 <!--t Scratcheroids! t-->
+<!--d Scratch is an online visual programming language designed to teach newcomers how to code. If you know me very well, you&#039;ll know I&#039;ve often been d-->
 <!--tag software tag-->
 <!--image /content/images/scratcheroids/scratcheroids-screenshot.png image-->
+
   
 [Scratch](https://scratch.mit.edu/) is an online visual programming language designed to teach newcomers how to code. If you know me very well, you'll know I've often been critical of visual programming languages, citing them as being more cumbersome to learn and use than plain code. While Scratch isn't a total exception, it struck me as one of the better options out there, and so I set out to create something in it myself to find out.  
   
@@ -10,7 +12,7 @@ The biggest downside is that as of this writing, Scratch still relies on Flash, 
   
 [Play Scratcheroids! on Scratch](https://scratch.mit.edu/projects/270707610/ "superclick")  
   
-[Play Scratcheroids! HTML5 Enhanced](https://lucasc.me/game/scratcheroids/ "superclick") 
+[Play Scratcheroids! HTML5 Enhanced](https://lucasc.me/game/scratcheroids/index.html "superclick") 
   
 *(\*Update: Scratch is now HTML5, but I still recommend the enhanced version for broader resolution and higher framerate support)*
 
