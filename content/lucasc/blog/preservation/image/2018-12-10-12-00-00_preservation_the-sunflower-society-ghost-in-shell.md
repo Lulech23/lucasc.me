@@ -15,4 +15,4 @@ In order to preserve the gameplay experience and the hard work of its developers
   
 [Visit "The Sunflower Society" on YouTube](https://www.youtube.com/channel/UCHP-gWaTu1Mv7xDY_8eVW5A "superclick")  
   
-**Note:** Also see [Open Ghost](https://gitlab.com/OpenGhost/OpenGhost/wikis/project-overview), a community effort to reproduce First Assault in Unreal Engine 4.
+**Note:** Also see [Open Ghost](https://gitlab.com/Section9), a community effort to reproduce First Assault in Unreal Engine 4.
