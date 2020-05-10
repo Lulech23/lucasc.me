@@ -60,6 +60,10 @@ GLOBAL
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100%;
 	font-size: 100%;

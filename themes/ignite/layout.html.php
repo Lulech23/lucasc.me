@@ -10,7 +10,23 @@
     <meta property="og:title" content="<?php echo $p->title; ?>"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="<?php echo $p->url; ?>"/>
-    <meta property="og:image" content="<?php echo site_url();?><?php echo $p->image; ?>"/>
+    <?php 
+    if (strpos($p->image, site_url()) === false) {
+        $ogimg = rtrim(site_url(),"/") . $p->image;
+    } else {
+        $ogimg = $p->image;
+    }
+    list($ogwidth, $ogheight, $ogtype, $ogattr) = getimagesize($ogimg);
+    switch ($ogtype) {
+        case 1: $ogtype = "image/gif"; break;
+        case 2: $ogtype = "image/jpeg"; break;
+        case 3: $ogtype = "image/png"; break;
+    }
+    ?>
+    <meta property="og:image" content="<?php echo $ogimg; ?>"/>
+    <meta property="og:image:width" content="<?php echo $ogwidth; ?>"/>
+    <meta property="og:image:height" content="<?php echo $ogheight; ?>"/>
+    <meta property="og:image:type" content="<?php echo $ogtype; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
     <?php if (publisher()): ?>
     <link href="<?php echo publisher() ?>" rel="publisher" />
