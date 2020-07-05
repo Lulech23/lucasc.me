@@ -2852,6 +2852,15 @@ function add_view($page)
         $views = json_decode(file_get_contents($filename), true);
     }
     if (isset($views[$page])) {
+        if (login()) {
+
+            $user = $_SESSION[config("site.url")]['user'];
+            $role = user('role', $user);
+
+            if ($role === 'admin') {
+                return;
+            }
+        }
         $views[$page]++;
     } else {
         $views[$page] = 1;
