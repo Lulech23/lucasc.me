@@ -12,7 +12,7 @@
     <meta property="og:url" content="<?php echo $p->url; ?>"/>
     <?php 
     if (strpos($p->image, site_url()) === false) {
-        $ogimg = rtrim(site_url(),"/") . $p->image;
+        $ogimg = rtrim(site_url(), "/") . $p->image;
     } else {
         $ogimg = $p->image;
     }
