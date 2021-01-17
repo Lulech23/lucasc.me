@@ -3,9 +3,9 @@
 <!--tag preservation tag-->
 <!--image /content/images/chaos-rings-preservation-project/Chaos_Rings_Logo5B15D.jpg image-->
 
-In the early '10s, Square Enix teamed up with veteran JRPG developer Media Vision to create a series of role-playing games exclusively for iOS, and later Android smartphones. For the time, it was an incredibly ambitious project with advanced graphics, console-style gameplay, a deep storyline, and a highly memorable soundtrack. Unfortunately, the games were a bit too far ahead of their time, and updates to Android and iOS broke compatibility with them just a few short years after release. Rather than fix the games, Square Enix simply pulled them from sale, leaving arguably the best original mobile game series to be lost to time.  
+In the early '10s, Square Enix teamed up with veteran JRPG developer Media Vision to create a series of role-playing games exclusively for iOS, and later, Android smartphones. For the time, it was an incredibly ambitious project with advanced graphics, console-style gameplay, a deep storyline, and a highly memorable soundtrack. Unfortunately, the games were a bit too far ahead of their time, and updates to Android and iOS broke compatibility with them just a few short years after release. Rather than fix the games, Square Enix simply pulled them from sale, leaving arguably the best original mobile game series to be lost to time.  
   
-The **Chaos Rings Preservation Project** resurrects the earlier games in the series by using offline, prepackaged emulators running compatible versions of Android on Windows PC. The latest game, [Chaos Rings 3](http://www.chaosrings.com/3/en/), currently retains compatibility with the latest versions of Android and iOS and is not included in the project, although it is possible to run it in the same emulators.  
+The **Chaos Rings Preservation Project** resurrects the earlier games in the series by using offline, prepackaged emulators running compatible versions of Android on Windows PC. The latest game, [Chaos Rings 3](http://www.chaosrings.com/3/en/), currently retains compatibility with recent versions of Android and iOS and is not included in the project, although it is possible to run it in the same emulators.  
   
 Check out this excellent overview of the original game by Andrew Nesvadba, formerly of [PocketGamer](http://pocketgamer.com):  
 
