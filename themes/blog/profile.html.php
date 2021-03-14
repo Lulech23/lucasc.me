@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <?php if (!empty($breadcrumb)): ?>
     <div class="breadcrumb"><?php echo $breadcrumb ?></div>
 <?php endif; ?>
@@ -24,12 +25,12 @@
                             $i++; ?>
                             <li class="<?php echo $class; ?>">
                                 <span><a href="<?php echo $p->url ?>"><?php echo $p->title ?></a></span> on
-                                <span><?php echo date('d F Y', $p->date) ?></span> - Posted in <span><?php echo $p->category ?></span>
+                                <span><?php echo format_date($p->date) ?></span> - Posted in <span><?php echo $p->category ?></span>
                             </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php } else {
-                    echo 'No posts found!';
+                    echo i18n('No_posts_found') . '!';
                 } ?>
             </div><!--//item-->
         </div><!--//content--> 

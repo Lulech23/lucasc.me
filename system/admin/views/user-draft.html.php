@@ -1,11 +1,16 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <h2 class="post-index"><?php echo $heading ?></h2>
+<br>
+<a class="btn btn-primary right" href="<?php echo site_url();?>admin/content">Add new post</a>
+<br><br>
 <?php if (!empty($posts)) { ?>
-    <table class="post-list">
+    <table class="table post-list">
         <tr class="head">
-            <th>Title</th>
-            <th>Created</th>
-            <th>Tag</th>
-            <th>Operations</th>
+            <th><?php echo i18n('Title');?></th>
+            <th><?php echo i18n('Created');?></th>
+            <th><?php echo i18n('Category');?></th>
+            <th><?php echo i18n('Tags');?></th>
+            <th><?php echo i18n('Operations');?></th>
         </tr>
         <?php $i = 0;
         $len = count($posts); ?>
@@ -22,12 +27,31 @@
             ?>
             <tr class="<?php echo $class ?>">
                 <td><?php echo $p->title ?></td>
-                <td><?php echo date('d F Y', $p->date) ?></td>
-                <td><?php echo strip_tags($p->tag) ?></td>
-                <td><a href="<?php echo $p->url ?>/edit?destination=admin/draft">Edit</a> <a href="<?php echo $p->url ?>/delete?destination=admin/draft">Delete</a></td>
+                <td><?php echo format_date($p->date) ?></td>
+                <td><a href="<?php echo str_replace('category', 'admin/categories', $p->categoryUrl); ?>"><?php echo strip_tags($p->category);?></a></td>
+                <td><?php echo $p->tag ?></td>
+                <td><a class="btn btn-primary btn-xs" href="<?php echo $p->url ?>/edit?destination=admin/draft"><?php echo i18n('Edit');?></a> <a class="btn btn-danger btn-xs" href="<?php echo $p->url ?>/delete?destination=admin/draft"><?php echo i18n('Delete');?></a></td>
             </tr>
         <?php endforeach; ?>
     </table>
+<?php if (!empty($pagination['prev']) || !empty($pagination['next'])): ?>
+<br>
+    <div class="pager">
+	<ul class="pagination">
+        <?php if (!empty($pagination['prev'])) { ?>
+            <li class="newer page-item"><a class="page-link" href="?page=<?php echo $page - 1 ?>" rel="prev">&#8592; Newer</a></li>
+        <?php } else { ?>
+		<li class="page-item disabled" ><span class="page-link">&#8592; Newer</span></li>
+		<?php } ?>
+        <li class="page-number page-item disabled"><span class="page-link"><?php echo $pagination['pagenum'];?></span></li>
+        <?php if (!empty($pagination['next'])) { ?>
+            <li class="older page-item" ><a class="page-link" href="?page=<?php echo $page + 1 ?>" rel="next">Older &#8594;</a></li>
+        <?php } else { ?>
+			<li class="page-item disabled" ><span class="page-link">Older &#8594;</span></li>
+		<?php } ?>
+		</ul>
+    </div>
+<?php endif; ?>
 <?php } else {
-    echo 'No draft found!';
+    echo i18n('No_draft_found') . '!';
 } ?>

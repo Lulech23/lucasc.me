@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <?php if (!empty($breadcrumb)): ?>
     <div class="breadcrumb"><?php echo $breadcrumb ?></div>
 <?php endif; ?>
@@ -58,7 +59,7 @@
                         <h2 class="title" itemprop="headline"><a href="<?php echo $p->url;?>"><?php echo $p->title;?></a></h2>
                     <?php } ?>
                     <p class="meta">
-                        <span class="date" itemprop="datePublished"><?php echo date('d F Y', $p->date) ?></span> - Posted in 
+                        <span class="date" itemprop="datePublished"><?php echo format_date($p->date) ?></span> - Posted in 
                         <span itemprop="articleSection"><?php echo $p->category;?></span> by 
                         <span itemprop="author"><a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a></span>
                         <?php if (disqus_count()) { ?> 
@@ -66,6 +67,7 @@
                         <?php } elseif (facebook()) { ?> 
                             with <i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> comments</span></a>
                         <?php } ?>
+						<?php if (login()) { echo ' - <span><a href="'. $p->url .'/edit?destination=post">Edit</a></span>'; } ?>
                     </p>
                 </div>
                 <div class="desc text-left" itemprop="articleBody">                                    
@@ -73,12 +75,11 @@
                 </div><!--//desc-->
                 <div style="position:relative;">
                    <?php if (config('teaser.type') === 'trimmed'):?>
-                       <span class="more"><a class="btn btn-cta-secondary" href="<?php echo $p->url;?>">Read more</a></span>
+                       <span class="more"><a class="btn btn-cta-secondary" href="<?php echo $p->url;?>"><?php echo config('read.more'); ?></a></span>
                    <?php endif;?>
                     <span class="share pull-right">
                         <a target="_blank" class="first" href="https://www.facebook.com/sharer.php?u=<?php echo $p->url ?>&t=<?php echo $p->title ?>"><i class="fa fa-facebook"></i></a> 
-                        <a target="_blank" href="https://twitter.com/share?url=<?php echo $p->url ?>&text=<?php echo $p->title ?>"><i class="fa fa-twitter"></i></a> 
-                        <a target="_blank" class="last" href="https://plus.google.com/share?url=<?php echo $p->url ?>"><i class="fa fa-google-plus"></i></a> 
+                        <a target="_blank" href="https://twitter.com/share?url=<?php echo $p->url ?>&text=<?php echo $p->title ?>"><i class="fa fa-twitter"></i></a>
                     </span>
                 <div style="clear:both;"></div>
                 </div>

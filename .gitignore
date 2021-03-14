@@ -1,4 +1,4 @@
-cache
-config
-game
-php-admin
+/cache/*
+/content/*
+/config/config.ini
+/config/users/*.ini

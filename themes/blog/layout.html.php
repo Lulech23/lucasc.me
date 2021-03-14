@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
@@ -7,8 +8,6 @@
     <title><?php echo $title;?></title>
     <meta name="description" content="<?php echo $description; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
-    <?php if (publisher()): ?>
-    <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>    
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic" rel="stylesheet" type="text/css">     
@@ -26,7 +25,7 @@
 </head> 
 <?php     
     if (isset($_GET['search'])) {
-        $search = $_GET['search'];
+        $search = _h($_GET['search']);
         $url = site_url() . 'search/' . remove_accent($search);
         header("Location: $url");
     }
@@ -50,10 +49,8 @@
                 <?php } ?>
                 <p class="desc"><?php echo blog_tagline();?></p>   
                 <ul class="social list-inline">
-                    <li><a href="<?php echo config('social.twitter');?>"><i class="fa fa-twitter"></i></a></li>                   
-                    <li><a href="<?php echo config('social.google');?>"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="<?php echo config('social.facebook');?>"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="<?php echo config('social.tumblr');?>"><i class="fa fa-tumblr"></i></a></li>
+                    <?php if(!empty(config('social.twitter'))):?><li><a href="<?php echo config('social.twitter');?>"><i class="fa fa-twitter"></i></a></li><?php endif;?>                   
+                    <?php if(!empty(config('social.facebook'))):?><li><a href="<?php echo config('social.facebook');?>"><i class="fa fa-facebook"></i></a></li><?php endif;?> 
                     <li><a href="<?php echo site_url();?>feed/rss"><i class="fa fa-rss"></i></a></li>                                    
                 </ul> 
             </div><!--//branding-->
@@ -166,20 +163,19 @@
                 </aside><!--//section-->
                 <aside class="category-list aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Category</h2>
+                        <h2 class="heading"><?php echo i18n('Category');?></h2>
                         <div class="content">
                             <?php echo category_list();?>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                <aside class="tags aside section">
+                <aside class="category-list aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Tags</h2>
-                        <div class="tag-cloud">
-                            <?php $tags = tag_cloud(true);?>
-                            <?php foreach ($tags as $tag => $count):?>
-                                <a class="more-link" href="<?php echo site_url();?>tag/<?php echo $tag;?>"><?php echo tag_i18n($tag);?></a> 
-                            <?php endforeach;?>
+                        <h2 class="heading"><?php echo i18n("Tags");?></h2>
+                        <div class="content">
+                        <div class="tagcloud">
+                        <?php echo tag_cloud();?>
+                        </div>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
