@@ -50,7 +50,7 @@ This year, I also happened to discover yet another Windows emulator--and it's a 
 Because of issues with older versions of the Project and how the new version renders them totally obsolete in every way, I have now removed 2017-18 releases and recategorized the others by their emulator rather than release year. **I highly recommend using the LD version** from here on out.
 
 ## Support the Series! {#support}
-The ultimate goal of the Preservation Project is to show Square Enix that an audience still exists for Chaos Rings and that the series deserves to live on modern platforms. If you want that too, [petition Square Enix for a re-release here](https://support.na.square-enix.com/about.php?la=1&id=1260)! In the meantime, if you decide to use the Preservation Project, please make sure to buy Chaos Rings III to show your support! It's the last 
+The ultimate goal of the Preservation Project is to show Square Enix that an audience still exists for Chaos Rings and that the series deserves to live on modern platforms. If you want that too, [petition Square Enix for a re-release here](https://support.na.square-enix.com/about.php?la=1&id=1260)! In the meantime, if you decide to use the Preservation Project, please make sure to buy Chaos Rings III to show your support! It's the last avenue to do so.
 
 [Buy Chaos Rings III on Android](https://play.google.com/store/apps/details?id=com.square_enix.chaosrings3gp&hl=en_US&gl=US "superclick")
 [Buy Chaos Rings III on iOS](https://apps.apple.com/us/app/chaos-rings/id958455860 "superclick")
@@ -60,10 +60,10 @@ Until an official port to modern platforms is released, I have decided to make t
 
 You will need a PC running Windows 7 or newer and at least 4GB of RAM. Each release contains all games in the original trilogy--you only need to download one!
 
-[Download Chaos Rings LD (2021)](https://drive.google.com/file/d/1dgmJpCv7AlSbv1s7gMHhc22qsJs3Uvl5/view?usp=sharing "superclick")
+[Download Chaos Rings LD (x86, 2021)](https://drive.google.com/file/d/1dgmJpCv7AlSbv1s7gMHhc22qsJs3Uvl5/view?usp=sharing "superclick")
 
-[Download Chaos Rings Xe (2020)](https://drive.google.com/file/d/1vYd_txW5Z0HhUJO7WrIekxmin5ah8ert/view?usp=sharing "superclick")
+[Download Chaos Rings Xe (x86, 2020)](https://drive.google.com/file/d/1vYd_txW5Z0HhUJO7WrIekxmin5ah8ert/view?usp=sharing "superclick")
 
-[Download Chaos Rings AVD (2019)](https://drive.google.com/file/d/11GCRdB3bXso50GTTq-YxVlIBfD7wPbPp/view?usp=sharing "superclick")
+[Download Chaos Rings AVD (ARM, 2019)](https://drive.google.com/file/d/11GCRdB3bXso50GTTq-YxVlIBfD7wPbPp/view?usp=sharing "superclick")
 
 ***Disclaimer: These files are provided as-is and come without warranty, guarantee, or support of any kind, nor are these downloads affiliated with Square Enix or Media Vision in any way. Use at your own risk!***
