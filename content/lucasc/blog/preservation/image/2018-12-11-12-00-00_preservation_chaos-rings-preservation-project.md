@@ -60,7 +60,7 @@ Until an official port to modern platforms is released, I have decided to make t
 
 You will need a PC running Windows 7 or newer and at least 4GB of RAM. Each release contains all games in the original trilogy--you only need to download one!
 
-[Download Chaos Rings LD (x86, 2021)](https://drive.google.com/file/d/1dgmJpCv7AlSbv1s7gMHhc22qsJs3Uvl5/view?usp=sharing "superclick")
+[Download Chaos Rings LD (x86, 2021)](https://drive.google.com/file/d/1FEXEwaojFGA0oHwP6a3KuJtT8mf6HKmL/view?usp=sharing "superclick")
 
 [Download Chaos Rings Xe (x86, 2020)](https://drive.google.com/file/d/1vYd_txW5Z0HhUJO7WrIekxmin5ah8ert/view?usp=sharing "superclick")
 
