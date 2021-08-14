@@ -1,4 +1,7 @@
 /cache/*
-/content/*
 /config/config.ini
 /config/users/*.ini
+/share/*
+/game/*
+/php-admin/*
+/form/sendmail.php

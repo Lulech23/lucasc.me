@@ -24,6 +24,8 @@ Disallow: /system/
 Disallow: /themes/
 Disallow: /vendor/
 Disallow: /cache/
+Disallow: /share/
+Disallow: /form/
 
 # Disallow files
 Disallow: /changelog.txt
