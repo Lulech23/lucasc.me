@@ -288,6 +288,15 @@ function get_posts($posts, $page = 1, $perpage = 0)
         // The post author + author url
         $post->author = $author;
         $post->authorUrl = site_url() . 'author/' . $author;
+		
+        $profile = get_author($author);
+        if (isset($profile[0])) {
+            $post->authorName = $profile[0]->name;
+            $post->authorAbout = $profile[0]->about;
+        } else {
+            $post->authorName = $author;
+            $post->authorAbout = 'Just another HTMLy user';
+        }
 
         $post->type = $type;
 
@@ -315,7 +324,7 @@ function get_posts($posts, $page = 1, $perpage = 0)
         // Extract the title and body
         $post->title = get_content_tag('t', $content, 'Untitled: ' . date('l jS \of F Y', $post->date));
         $post->image = get_content_tag('image', $content);
-        $post->video = get_youtube_id(get_content_tag('video', $content));
+        $post->video = get_content_tag('video', $content);
         $post->link  = get_content_tag('link', $content);
         $post->quote  = get_content_tag('quote', $content);
         $post->audio  = get_content_tag('audio', $content);
@@ -375,6 +384,9 @@ function get_posts($posts, $page = 1, $perpage = 0)
         }
 
         $post->description = get_content_tag("d", $content, get_description($post->body));
+		
+        $word_count = str_word_count(strip_tags($post->body));
+        $post->readTime = ceil($word_count / 200);
 
         $tmp[] = $post;
     }
@@ -491,7 +503,6 @@ function get_category($category, $page, $perpage)
         // Replaced string
         $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
 
-        // Author string
         $str = explode('/', $replaced);
         $cat = $str[count($str) - 3];
 
@@ -501,7 +512,7 @@ function get_category($category, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        not_found();
+        return false;
     }
 
     $tmp = array_unique($tmp, SORT_REGULAR);
@@ -637,7 +648,6 @@ function get_type($type, $page, $perpage)
         // Replaced string
         $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
 
-        // Author string
         $str = explode('/', $replaced);
         $tp = $str[count($str) - 2];
 
@@ -647,7 +657,7 @@ function get_type($type, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        not_found();
+        return false;
     }
 
     $tmp = array_unique($tmp, SORT_REGULAR);
@@ -681,7 +691,7 @@ function get_tag($tag, $page, $perpage, $random)
     }
 
     if (empty($tmp)) {
-        not_found();
+        return false;
     }
 
     $tmp = array_unique($tmp, SORT_REGULAR);
@@ -704,7 +714,7 @@ function get_archive($req, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        not_found();
+        return false;
     }
 
     return $tmp = get_posts($tmp, $page, $perpage);
@@ -726,7 +736,7 @@ function get_profile_posts($name, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        return;
+        return false;
     }
 
     return $tmp = get_posts($tmp, $page, $perpage);
@@ -751,7 +761,7 @@ function get_draft($profile, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        return;
+        return false;
     }
 
     return $tmp = get_posts($tmp, $page, $perpage);
@@ -801,7 +811,7 @@ function get_author($name)
     if (!empty($tmp) || file_exists($username)) {
         return $tmp;
     } else {
-        not_found();
+        return false;
     }
 }
 
@@ -856,6 +866,9 @@ function get_static_post($static)
                 }
 
                 $post->description = get_content_tag("d", $content, get_description($post->body));
+				
+                $word_count = str_word_count(strip_tags($post->body));
+                $post->readTime = ceil($word_count / 200);
 
                 $tmp[] = $post;
             }
@@ -900,6 +913,9 @@ function get_static_sub_post($static, $sub_static)
                 $post->views = get_views($post->file);
 
                 $post->description = get_content_tag("d", $content, get_description($post->body));
+				
+                $word_count = str_word_count(strip_tags($post->body));
+                $post->readTime = ceil($word_count / 200);
 
                 $tmp[] = $post;
             }
@@ -953,7 +969,7 @@ function get_keyword($keyword, $page, $perpage)
     }
 
     if (empty($tmp)) {
-        return $tmp;
+        return false;
     }
 
     return $tmp = get_posts($tmp, $page, $perpage);
@@ -1042,7 +1058,6 @@ function get_categorycount($var)
         // Replaced string
         $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
 
-        // Author string
         $str = explode('/', $replaced);
         $cat = '/blog/' . $str[count($str) - 3];
         if (stripos($cat, "$var") !== false) {
@@ -1070,7 +1085,6 @@ function get_typecount($var)
         // Replaced string
         $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
 
-        // Author string
         $str = explode('/', $replaced);
         $tp = '/' . $str[count($str) - 2] . '/';
         if (stripos($tp, "$var") !== false) {
@@ -1099,7 +1113,6 @@ function get_draftcount($var)
         // Replaced string
         $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
 
-        // Author string
         $str = explode('/', $replaced);
         $cat = $str[count($str) - 5];
 
@@ -1491,7 +1504,7 @@ function tag_cloud($custom = null)
             foreach ($tag_collection as $tag => $count) {
                 $size = $min_size + (($count - $min_qty) * $step);
                 echo ' <a class="tag-cloud-link" href="'. site_url(). 'tag/'. $tag .'" style="font-size:'. $size .'pt;">'.tag_i18n($tag).'</a> ';
-            }			
+            }            
 
         } else {
             return $tag_collection;
@@ -1516,6 +1529,8 @@ function has_prev($prev)
             'tag' => $prev->tag,
             'category' => $prev->category,
             'author' => $prev->author,
+            'authorName' => $prev->authorName,
+            'authorAbout' => $prev->authorAbout,
             'authorUrl' => $prev->authorUrl,
             'related' => $prev->related,
             'views' => $prev->views,
@@ -1525,7 +1540,9 @@ function has_prev($prev)
             'video' => $prev->video,
             'audio' => $prev->audio,
             'quote' => $prev->quote,
-            'link' => $prev->link
+            'link' => $prev->link,
+            'categoryUrl' => $prev->categoryUrl,
+            'readTime' => $prev->readTime
         );
     }
 }
@@ -1544,6 +1561,8 @@ function has_next($next)
             'tag' => $next->tag,
             'category' => $next->category,
             'author' => $next->author,
+            'authorName' => $next->authorName,
+            'authorAbout' => $next->authorAbout,
             'authorUrl' => $next->authorUrl,
             'related' => $next->related,
             'views' => $next->views,
@@ -1553,7 +1572,9 @@ function has_next($next)
             'video' => $next->video,
             'audio' => $next->audio,
             'quote' => $next->quote,
-            'link' => $next->link
+            'link' => $next->link,
+            'categoryUrl' => $next->categoryUrl,
+            'readTime' => $next->readTime
         );
     }
 }
@@ -1605,7 +1626,7 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
         if ($page > 1)
             $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $prev .'">« Prev</a></li>';
         else
-            $pagination .= '<li class="page-item disabled"><span>« Prev</span></li>';
+            $pagination .= '<li class="page-item disabled"><span class="page-link">« Prev</span></li>';
 
         //pages
         if ($lastpage < 7 + ($adjacents * 2))    //not enough pages to bother breaking it up
@@ -1613,7 +1634,7 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
             for ($counter = 1; $counter <= $lastpage; $counter++)
             {
                 if ($counter == $page)
-                    $pagination .= '<li class="page-item active"><span>'. $counter.'</span></li>';
+                    $pagination .= '<li class="page-item active"><span class="page-link">'. $counter.'</span></li>';
                 else
                     $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $counter .'">'. $counter .'</a></li>';
             }
@@ -1626,11 +1647,11 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
                 for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
                 {
                     if ($counter == $page)
-                        $pagination .= '<li class="page-item active"><span>'. $counter .'</span></li>';
+                        $pagination .= '<li class="page-item active"><span class="page-link">'. $counter .'</span></li>';
                     else
                         $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $counter .'">'. $counter .'</a></li>';
                 }
-                $pagination .= '<li class="page-item disabled"><span>...</span></li>';
+                $pagination .= '<li class="page-item disabled"><span class="page-link">...</span></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $lpm1 .'">'. $lpm1 .'</a></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $lastpage .'">'. $lastpage .'</a></li>';
             }
@@ -1639,15 +1660,15 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
             {
                 $pagination .= '<li class="page-item"><a class="page-link" href="' . $pagestring .'1">1</a></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring .'2">2</a></li>';
-                $pagination .= '<li class="page-item disabled"><span>...</span></li>';
+                $pagination .= '<li class="page-item disabled"><span class="page-link">...</span></li>';
                 for ($counter = $page - $adjacents; $counter <= $page + $adjacents; $counter++)
                 {
                     if ($counter == $page)
-                        $pagination .= '<li class="page-item active"><span>'. $counter .'</span></li>';
+                        $pagination .= '<li class="page-item active"><span class="page-link">'. $counter .'</span></li>';
                     else
                         $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $counter .'">'. $counter .'</a></li>';
                 }
-                $pagination .= '<li class="page-item disabled"><span>...</span></li>';
+                $pagination .= '<li class="page-item disabled"><span class="page-link">...</span></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $lpm1 .'">'. $lpm1 .'</a></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $lastpage . '">'. $lastpage .'</a></li>';
             }
@@ -1656,11 +1677,11 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
             {
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring .'1">1</a></li>';
                 $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring .'2">2</a></li>';
-                $pagination .= '<li class="page-item disabled"><span>...</span></li>';
+                $pagination .= '<li class="page-item disabled"><span class="page-link">...</span></li>';
                 for ($counter = $lastpage - (1 + ($adjacents * 3)); $counter <= $lastpage; $counter++)
                 {
                     if ($counter == $page)
-                        $pagination .= '<li class="page-item active"><span>'. $counter .'</span></li>';
+                        $pagination .= '<li class="page-item active"><span class="page-link">'. $counter .'</span></li>';
                     else
                         $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $counter .'">'. $counter .'</a></li>';
                 }
@@ -1671,7 +1692,7 @@ function get_pagination($page = 1, $totalitems, $perpage = 10, $adjacents = 1, $
         if ($page < $counter - 1)
             $pagination .= '<li class="page-item"><a class="page-link" href="'. $pagestring . $next .'">Next »</a></li>';
         else
-            $pagination .= '<li class="page-item disabled"><span>Next »</span></li>';
+            $pagination .= '<li class="page-item disabled"><span class="page-link">Next »</span></li>';
         $pagination .= '</ul>';
     }
 
@@ -1811,7 +1832,7 @@ function get_image($text)
             return $vidThumb;
         }
     } else{
-	   return false;
+       return false;
     }
 }
 
@@ -1869,12 +1890,12 @@ function social($imgDir = null)
 function copyright()
 {
     $blogcp = blog_copyright();
-    $credit = 'Proudly powered by <a href="http://www.htmly.com" target="_blank">HTMLy</a>';
+    $credit = 'Powered by <a href="http://www.htmly.com" target="_blank" rel="nofollow">HTMLy</a>';
 
     if (!empty($blogcp)) {
-        return $copyright = '<p>' . $blogcp . '</p><p>' . $credit . '</p>';
+        return $copyright = '<span class="copyright">' . $blogcp . '</span> <span class="credit">' . $credit . '</span>';
     } else {
-        return $credit = '<p>' . $credit . '</p>';
+        return $credit = '<span class="credit">' . $credit . '</span>';
     }
 }
 
@@ -1893,7 +1914,6 @@ function disqus($title = null, $url = null)
         var disqus_shortname = '{$disqus}';
         var disqus_title = '{$title}';
         var disqus_url = getAbsolutePath('{$url}');
-        var disqus_url = '{$url}';
         (function () {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -1976,7 +1996,7 @@ function publisher()
 function analytics()
 {
     $analytics = config('google.analytics.id');
-    $gtag = config('google.gtag.id');	
+    $gtag = config('google.gtag.id');    
     $script = <<<EOF
     <script>
         (function (i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function () {
@@ -2001,8 +2021,8 @@ EOF;
     if (!empty($gtag)) {
         return $gtagScript;
     } elseif (!empty($analytics)) {
-		return $script;
-	}
+        return $script;
+    }
 }
 
 function slashUrl($url) {
@@ -2010,88 +2030,88 @@ function slashUrl($url) {
 }
 
 function parseNodes($nodes, $child = null, $class = null) {
-	if (empty($child)) {
-		$ul = '<ul class="nav navbar-nav '.$class.'">';
-		foreach ($nodes as $node) {
-			if (isset($node->children)) { 
-				$ul .= parseNode($node, true);
-			} else {
-				$ul .= parseNode($node);
-			}
-		}
-		$ul .= '</ul>';
-		return $ul;
-	} else {
-		$ul = '<ul class="subnav dropdown-menu" role="menu">';
-		foreach ($nodes as $node) {
-			if (isset($node->children)) { 
-				$ul .= parseNode($node, true);
-			} else {
-				$ul .= parseNode($node);
-			}
-		}
-		$ul .= '</ul>';
-		return $ul;
-	}
+    if (empty($child)) {
+        $ul = '<ul class="nav navbar-nav '.$class.'">';
+        foreach ($nodes as $node) {
+            if (isset($node->children)) { 
+                $ul .= parseNode($node, true);
+            } else {
+                $ul .= parseNode($node);
+            }
+        }
+        $ul .= '</ul>';
+        return $ul;
+    } else {
+        $ul = '<ul class="subnav dropdown-menu" role="menu">';
+        foreach ($nodes as $node) {
+            if (isset($node->children)) { 
+                $ul .= parseNode($node, true);
+            } else {
+                $ul .= parseNode($node);
+            }
+        }
+        $ul .= '</ul>';
+        return $ul;
+    }
 }
 
 function parseNode($node, $child = null) {
-	$req = strtok($_SERVER["REQUEST_URI"],'?');
+    $req = strtok($_SERVER["REQUEST_URI"],'?');
     $url = parse_url(slashUrl($node->slug));
     $su = parse_url(site_url());
-	if (empty($child)) {
+    if (empty($child)) {
 
-		if (isset($url['host'])) {
-			if ($url['host'] ==  $su['host']) {
-				if (slashUrl($url['path']) == slashUrl($req)) {
+        if (isset($url['host']) && isset($su['host'])) {
+            if ($url['host'] ==  $su['host']) {
+                if (slashUrl($url['path']) == slashUrl($req)) {
                     $li = '<li class="item nav-item active '.$node->class.'">';
-				} else  {					
-				    $li = '<li class="item nav-item '.$node->class.'">';
-				}
-			} else {
-				$li = '<li class="item nav-item '.$node->class.'">'; // Link out
-			}
-		} else {
-			if (slashUrl($node->slug) == slashUrl($req)) {
-				$li = '<li class="item nav-item active '.$node->class.'">';
-			} else {
-				$li = '<li class="item nav-item '.$node->class.'">';
-			}
-		}
-		
-		$li .= '<a class="nav-link" href="'.htmlspecialchars(slashUrl($node->slug), FILTER_SANITIZE_URL).'">'.$node->name.'</a>';
-		if (isset($node->children)) { 
-			$li .= parseNodes($node->children, true, null);
-		}
-		$li .= '</li>';
-		return $li;
-	} else {
-		
-		if (isset($url['host'])) {
-			if ($url['host'] ==  $su['host']) {
-				if (slashUrl($url['path']) == slashUrl($req)) {
+                } else  {                    
+                    $li = '<li class="item nav-item '.$node->class.'">';
+                }
+            } else {
+                $li = '<li class="item nav-item '.$node->class.'">'; // Link out
+            }
+        } else {
+            if (slashUrl($node->slug) == slashUrl($req)) {
+                $li = '<li class="item nav-item active '.$node->class.'">';
+            } else {
+                $li = '<li class="item nav-item '.$node->class.'">';
+            }
+        }
+        
+        $li .= '<a class="nav-link" href="'.htmlspecialchars(slashUrl($node->slug), FILTER_SANITIZE_URL).'">'.$node->name.'</a>';
+        if (isset($node->children)) { 
+            $li .= parseNodes($node->children, true, null);
+        }
+        $li .= '</li>';
+        return $li;
+    } else {
+        
+        if (isset($url['host']) && isset($su['host'])) {
+            if ($url['host'] ==  $su['host']) {
+                if (slashUrl($url['path']) == slashUrl($req)) {
                     $li = '<li class="item nav-item dropdown active '.$node->class.'">';
-				} else  {					
-				    $li = '<li class="item nav-item dropdown '.$node->class.'">';
-				}
-			} else {
-				$li = '<li class="item nav-item dropdown '.$node->class.'">'; // Link out
-			}
-		} else {
-			if (slashUrl($node->slug) == slashUrl($req)) {
-				$li = '<li class="item nav-item dropdown active '.$node->class.'">';
-			} else {
-				$li = '<li class="item nav-item dropdown '.$node->class.'">';
-			}
-		}
-		
-		$li .= '<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="'.htmlspecialchars(slashUrl($node->slug), FILTER_SANITIZE_URL).'">'.$node->name.'<b class="caret"></b></a>';
-		if (isset($node->children)) { 
-			$li .= parseNodes($node->children, true, null);
-		}
-		$li .= '</li>';
-		return $li;			
-	}
+                } else  {                    
+                    $li = '<li class="item nav-item dropdown '.$node->class.'">';
+                }
+            } else {
+                $li = '<li class="item nav-item dropdown '.$node->class.'">'; // Link out
+            }
+        } else {
+            if (slashUrl($node->slug) == slashUrl($req)) {
+                $li = '<li class="item nav-item dropdown active '.$node->class.'">';
+            } else {
+                $li = '<li class="item nav-item dropdown '.$node->class.'">';
+            }
+        }
+        
+        $li .= '<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="'.htmlspecialchars(slashUrl($node->slug), FILTER_SANITIZE_URL).'">'.$node->name.'<b class="caret"></b></a>';
+        if (isset($node->children)) { 
+            $li .= parseNodes($node->children, true, null);
+        }
+        $li .= '</li>';
+        return $li;            
+    }
 }
 
 // Menu
@@ -2099,11 +2119,11 @@ function menu($class = null)
 {
     $filename = "content/data/menu.json";
     if (file_exists($filename)) {
-		$json = json_decode(file_get_contents('content/data/menu.json', true));
-		$nodes = json_decode($json);
-	    if (empty($nodes)) {
+        $json = json_decode(file_get_contents('content/data/menu.json', true));
+        $nodes = json_decode($json);
+        if (empty($nodes)) {
             get_menu($class);
-	    } else {
+        } else {
             $html = parseNodes($nodes, null, $class);
             libxml_use_internal_errors(true);
             $doc = new DOMDocument();
@@ -2116,20 +2136,20 @@ function menu($class = null)
             foreach ($elements as $element) {
                 $nodes = $element->childNodes;
                 foreach ($nodes as $node) {
-		            $class = $node->getAttribute('class');
-		            if (stripos($class, 'active')) {
-						$parentClass = $element->parentNode->getAttribute('class') . ' active';
-			            $element->parentNode->setAttribute('class', $parentClass);
-		            } 
-	            }
+                    $class = $node->getAttribute('class');
+                    if (stripos($class, 'active')) {
+                        $parentClass = $element->parentNode->getAttribute('class') . ' active';
+                        $element->parentNode->setAttribute('class', $parentClass);
+                    } 
+                }
             }
-			
-		return preg_replace('~<(?:!DOCTYPE|/?(?:html|head|body))[^>]*>\s*~i', '', utf8_decode($doc->saveHTML($doc->documentElement)));
-			
-	    }
-	} else {
-        get_menu($class);	
-	}
+            
+        return preg_replace('~<(?:!DOCTYPE|/?(?:html|head|body))[^>]*>\s*~i', '', utf8_decode($doc->saveHTML($doc->documentElement)));
+            
+        }
+    } else {
+        get_menu($class);    
+    }
 }
 
 // Get the title from file
@@ -2285,7 +2305,7 @@ function not_found()
     } else {
         $layout = '';
     }
-	
+    
     header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
     render('404', array(
         'title' => 'This page doesn\'t exist! - ' . blog_title(),
@@ -3031,16 +3051,28 @@ function isCaptcha($reCaptchaResponse)
     return ($json['success']);
 }
 
-// Get YouTube video ID
-function get_youtube_id($url)
+// Get video ID
+function get_video_id($url)
 {
     if(empty($url)) {
        return;
     }
 
-    preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+    $link = parse_url($url);
+    
+    if(!isset($link['host'])) {
+        return $url;
+    }
 
-    return $matches[1];
+    if (stripos($link['host'], 'youtube.com') !== false || stripos($link['host'], 'youtu.be') !== false) { 
+        preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/ ]{11})%i', $url, $match);
+        return $match[1];
+    } elseif (stripos($link['host'], 'vimeo.com') !== false) {
+        preg_match('%^https?:\/\/(?:www\.|player\.)?vimeo.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|video\/|)(\d+)(?:$|\/|\?)(?:[?]?.*)$%im', $url, $match);
+        return $match[3];
+    } else {
+        return $url;
+    }
 }
 
 // Shorten the string
@@ -3168,127 +3200,6 @@ function rename_category_folder($string, $old_url)
             rename($f[0], $f[1]);
         }
     }
-
-}
-
-// Migrate old content.
-function migrate_old_content()
-{
-    $content = array();
-    $tmp = array();
-    $files = array();
-    $draft = array();
-    $dtmp = array();
-    $dfiles = array();
-
-    $tmp = glob('content/*/blog/*.md', GLOB_NOSORT);
-    if (is_array($tmp)) {
-        foreach ($tmp as $file) {
-            $content[] = $file;
-        }
-    }
-
-    if(!empty($content)) {
-
-        foreach ($content as $c => $v) {
-            $arr = explode('/', $v);
-            $string = file_get_contents($v);
-            $image = get_content_tag('image', $string);
-            $video = get_youtube_id(get_content_tag('video', $string));
-            $audio = get_content_tag('audio', $string);
-            $link = get_content_tag('link', $string);
-            $quote = get_content_tag('quote', $string);
-            if (!empty($image)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/image/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/image/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-            if (!empty($video)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/video/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/video/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-            if (!empty($audio)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/audio/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/audio/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-            if (!empty($link)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/link/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/link/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-            if (!empty($quote)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/quote/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/quote/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-            if (empty($image) && empty($video) && empty($audio) && empty($link) && empty($quote)) {
-               $files[] = array($v, 'content/' . $arr[1] . '/blog/uncategorized/post/' . $arr[3]);
-               $dir = 'content/' . $arr[1] . '/blog/uncategorized/post/';
-                if (!is_dir($dir)) {
-                    mkdir($dir, 0775, true);
-                }
-            }
-        }
-
-        foreach ($files as $f) {
-            rename($f[0], $f[1]);
-        }
-
-    }
-
-    $dir = 'content/data/';
-    if (!is_dir($dir)) {
-        mkdir($dir, 0775, true);
-    }
-
-    if (file_exists('content/tags.lang')) {
-        rename('content/tags.lang', 'content/data/tags.lang');
-        unlink('content/views.json');
-    }
-
-    $dtmp = glob('content/*/draft/*.md', GLOB_NOSORT);
-    $old = array();
-    if (is_array($dtmp)) {
-        foreach ($dtmp as $dfile) {
-            $draft[] = $dfile;
-        }
-    }
-
-    if(!empty($draft)) {
-        foreach ($draft as $d => $val) {
-            $arr = explode('/', $val);
-            $old[] = 'content/' . $arr[1] . '/draft/';
-            $dir = 'content/' . $arr[1] . '/blog/uncategorized/draft/';
-            $new = 'content/' . $arr[1] . '/blog/uncategorized/draft/' . $arr[3];
-            if (!is_dir($dir)) {
-                mkdir($dir, 0775, true);
-            }
-            $dfiles[] = array($val, $new);
-        }
-
-        foreach ($dfiles as $fd) {
-            rename($fd[0], $fd[1]);
-        }
-        $tt = array();
-        $tt = array_unique($old, SORT_REGULAR);
-        foreach ($tt as $t) {
-            rmdir($t);
-        }
-    }
-
-    rebuilt_cache('all');
 
 }
 

@@ -53,6 +53,7 @@ function session($user, $pass)
 
     if ($user_enc == "password_hash") {
         if (password_verify($pass, $user_pass)) {
+            if (session_status() == PHP_SESSION_NONE) session_start();
             if (password_needs_rehash($user_pass, PASSWORD_DEFAULT)) {
                 update_user($user, $pass, $user_role);
             }
@@ -62,6 +63,7 @@ function session($user, $pass)
             return $str = '<div class="error-message"><ul><li class="alert alert-danger">ERROR: Invalid username or password.</li></li></div>';
         }
     } else if (old_password_verify($pass, $user_enc, $user_pass)) {
+        if (session_status() == PHP_SESSION_NONE) session_start();
         update_user($user, $pass, $user_role);
         $_SESSION[config("site.url")]['user'] = $user;
         header('location: admin');
@@ -88,26 +90,33 @@ function add_content($title, $tag, $url, $content, $user, $description = null, $
     
     $tag = explode(',', preg_replace("/\s*,\s*/", ",", rtrim($tag, ',')));
     $tag = array_filter(array_unique($tag));
-    $taglang = array_flip(unserialize(file_get_contents('content/data/tags.lang')));
-    $tflip = array_intersect_key($taglang, array_flip($tag));
-    $post_tag = array();
-    $post_tagmd = array();
-    foreach ($tag as $t) {
-        if (array_key_exists($t, $tflip)) {
-            foreach ($tflip as $tfp => $tf){
-                if($t === $tfp) {
-                    $post_tag[] = $tf;
-                    $post_tagmd[] = $tfp;
+    $tagslang = "content/data/tags.lang";
+    if (file_exists($tagslang)) {
+        $taglang = array_flip(unserialize(file_get_contents($tagslang)));
+        $tflip = array_intersect_key($taglang, array_flip($tag));
+        $post_tag = array();
+        $post_tagmd = array();
+        foreach ($tag as $t) {
+            if (array_key_exists($t, $tflip)) {
+                foreach ($tflip as $tfp => $tf){
+                    if($t === $tfp) {
+                        $post_tag[] = $tf;
+                        $post_tagmd[] = $tfp;
+                    }
                 }
+            } else {
+                $post_tag[] = $t;
+                $post_tagmd[] = $t;
             }
-        } else {
-            $post_tag[] = $t;
-            $post_tagmd[] = $t;
         }
-    }
-    
-    $post_tag = safe_tag(implode(',', $post_tag));
-    $post_tagmd = safe_html(implode(',', $post_tagmd));
+		
+        $post_tag = safe_tag(implode(',', $post_tag));
+        $post_tagmd = safe_html(implode(',', $post_tagmd));		
+		
+	} else {
+        $post_tag = safe_tag(implode(',', $tag));
+        $post_tagmd = safe_html(implode(',', $tag));		
+	}
 
     $post_date = date('Y-m-d-H-i-s');
     $post_title = safe_html($title);
@@ -214,26 +223,33 @@ function edit_content($title, $tag, $url, $content, $oldfile, $destination = nul
     
     $tag = explode(',', preg_replace("/\s*,\s*/", ",", rtrim($tag, ',')));
     $tag = array_filter(array_unique($tag));
-    $taglang = array_flip(unserialize(file_get_contents('content/data/tags.lang')));
-    $tflip = array_intersect_key($taglang, array_flip($tag));
-    $post_tag = array();
-    $post_tagmd = array();
-    foreach ($tag as $t) {
-        if (array_key_exists($t, $tflip)) {
-            foreach ($tflip as $tfp => $tf){
-                if($t === $tfp) {
-                    $post_tag[] = $tf;
-                    $post_tagmd[] = $tfp;
+    $tagslang = "content/data/tags.lang";
+    if (file_exists($tagslang)) {
+        $taglang = array_flip(unserialize(file_get_contents($tagslang)));
+        $tflip = array_intersect_key($taglang, array_flip($tag));
+        $post_tag = array();
+        $post_tagmd = array();
+        foreach ($tag as $t) {
+            if (array_key_exists($t, $tflip)) {
+                foreach ($tflip as $tfp => $tf){
+                    if($t === $tfp) {
+                        $post_tag[] = $tf;
+                        $post_tagmd[] = $tfp;
+                    }
                 }
+            } else {
+                $post_tag[] = $t;
+                $post_tagmd[] = $t;
             }
-        } else {
-            $post_tag[] = $t;
-            $post_tagmd[] = $t;
         }
-    }
-    
-    $post_tag = safe_tag(implode(',', $post_tag));
-    $post_tagmd = safe_html(implode(',', $post_tagmd));
+		
+        $post_tag = safe_tag(implode(',', $post_tag));
+        $post_tagmd = safe_html(implode(',', $post_tagmd));		
+		
+	} else {
+        $post_tag = safe_tag(implode(',', $tag));
+        $post_tagmd = safe_html(implode(',', $tag));		
+	}
     
     $oldurl = explode('_', $oldfile);
     $dir = explode('/', $oldurl[0]);
@@ -823,7 +839,7 @@ function get_user_posts()
             echo '<table class="table post-list">';
             echo '<tr class="head"><th>' . i18n('Title') . '</th><th>' . i18n('Published') . '</th>';
             if (config("views.counter") == "true")
-                echo '<th>Views</th>';
+                echo '<th>'.i18n('Views').'</th>';
             echo '<th>' . i18n('Category') . '</th><th>' . i18n('Tags') . '</th><th>' . i18n('Operations') . '</th></tr>';
             $i = 0;
             $len = count($posts);
@@ -861,7 +877,7 @@ function get_user_pages()
             echo '<table class="table post-list">';
             echo '<tr class="head"><th>' . i18n('Title') . '</th>';
             if (config("views.counter") == "true")
-                echo '<th>Views</th>';
+                echo '<th>'.i18n('Views').'</th>';
             echo '<th>' . i18n('Operations') . '</th></tr>';
             $i = 0;
             $len = count($posts);
@@ -907,7 +923,7 @@ function get_backup_files()
         if (!empty($files)) {
             krsort($files);
             echo '<table class="table backup-list">';
-            echo '<tr class="head"><th>' . i18n('Filename') . '</th><th>Date</th><th>' . i18n('Operations') . '</th></tr>';
+            echo '<tr class="head"><th>' . i18n('Filename') . '</th><th>'.i18n('Date').'</th><th>' . i18n('Operations') . '</th></tr>';
             $i = 0;
             $len = count($files);
             foreach ($files as $file) {
@@ -943,7 +959,7 @@ function get_backup_files()
             }
             echo '</table>';
         } else {
-            echo 'No available backup!';
+            echo i18n('No_available_backup');
         }
     }
 }
