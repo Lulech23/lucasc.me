@@ -1,0 +1,37 @@
+<!--t Google is finally making the Pixel I always wanted, and I&#039;ve never felt so conflicted t-->
+<!--d I&#039;ve been a loyal Pixel follower from the start, and now Google is ready to build upward again. But while I should be excited, I&#039;m merely hesitant instead. d-->
+<!--tag mobile,google,android tag-->
+<!--image /content/images/20210523141726-pixel6-render.jpg image-->
+
+It's been a wild week for Google fans. Between multiple [Pixel 6 leaks][1] and an official [Google I/O developer conference][2] detailing Android 12, the tech community has gotten a pretty significant taste of what's to come for the world's biggest smartphone ecosystem. Of course, we get this every year. But 2021 feels like a noteworthy shift for Google, both for its direction and the context in which it's occurring.
+
+Although I've been a loyal Pixel follower from the start, it's always been clear to me that the Pixel *brand* has had a problem. I loved the clean hardware and software design, but it always felt a bit like an [imitation][3] of some sort. Each successive phone has suffered an identity crisis in one department or another, with the camera being the only consistent hallmark between iterations. But that camera is now four years old and starting to show its age. In fact, Google proved it couldn't merely rest on its photography laurels all the way back in 2019 with the Pixel 4, a phone so badly miscalculated that its commercial failure ultimately [broke up the design team][4]. It certainly didn't help that in 2020, mask-wearing broke its only phone-oriented feature, too—that being the radar-powered face unlock which tragically replaced the fingerprint sensor. As such, for the Pixel 5, Google desperately needed to go back to basics. And while lower-key than past Pixels, the results were... surprisingly great! Pixel 5 seemed to pull from the best of the series's history, compiled into a single device that really set the baseline for what the Pixel experience—indeed, the Pixel *identity*—should be.
+
+> The foundation has been laid, and now Google is ready to build upward again. But while by all rights I should be excited, I'm finding myself merely hesitant instead.
+
+Part of it, no doubt, has to do with the air of political correctness palpable throughout the whole Google I/O presentation. Things like improving cameras to better handle darker skin tones *shouldn't* be political, but there was a distinct dystopian undertone to a massive for-profit company like Google signaling virtues like equality and privacy. Between acquisitions like Fitbit and absorbing Samsung's Tizen OS into Android Wear, perhaps Google envisions a future where there's simply no one left to share your data with? I joke, of course, but make no mistake: the reason Google is taking on new privacy initiatives has little to do with altruism. It's simply a combination of [impending government regulation][5] (should they change nothing) and increasing vertical integration of their products to reduce competition. So long as they pay lip service, they can keep the government at bay while quietly reigning-in the Android ecosystem they seem to regret ever open-sourcing in the first place. That's a win for Google, but a net loss for consumers.
+
+But that's more or less the dark side of tech as a whole, these days. As a product, I'd still be onboard for a Pixel 6 that fulfills certain wishlist items I've maintained for years. The question is, would I feel the same if that wishlist came at the expense of that baseline Pixel experience I already enjoyed?
+
+![Pixel 6 leaked design render][6]
+<center><i style="font-size: small;">Pixel 6 leaked design renders via [@Jon Prosser](https://twitter.com/jon_prosser) and [@RendersbyIan](https://twitter.com/RendersbyIan)</i></center>
+
+Love it or hate it, Pixel 6 knows what it's trying to be, and proclaims it loud and proud. Personally, let's just say I don't fall on the "love it" side of that spectrum. The two-tone back and aluminum rails echo 1970's design sensibilities to me. Meanwhile, the front-facing hole-punch camera is now centered where it will occlude fullscreen content more noticeably. And although I appreciate Google's attempt at solving phone wobble, I'm decidedly not a fan of the alleged "camera bridge" on the back doubling as a veritable kickstand. Periscope telephoto cameras are the future as far as I'm concerned, but it seems to only make an appearance on the larger Pixel 6 Pro model, leaving smaller phone users out. Not that the base Pixel 6 is much smaller, for that matter, clocking in at 6.4" versus a whopping 6.7" on the Pro. I'll happily accept a larger battery any day, but Google, this isn't the way. Compactness is still a virtue in my book.
+
+Then there's Whitechapel. No, not the district in London. (Guess which search engine I used to look that one up?) For Pixel 6, Google is taking a(nother) page from Apple's playbook and parting ways with Qualcomm to make their own silicon instead. The popular justification claims that this move is necessary for Google to provide more than three years of guaranteed updates to Pixel devices, but it's hard not to see it as simply more vertical integration. After all, Samsung, Mediatek, and NVIDIA chipsets never inherently improved support lifespan. Indeed, Android is far too steeped in third-party licensees for Google to take full ownership of it now, but they *can* give themselves as many first-party advantages as possible. Even if longer software support is a side effect, how many people actually use the same phone for more than three years anyway? A percentage, to be sure, and in 2021 it's more viable than ever. But for most, it's the *perceived* value that matters. Whether or not you'll keep your phone for five years, it's comforting to believe that you *can*, and for Android users, perhaps Pixel will be your only option by design. That's anti-competitive, not altruistic.
+
+![Android 12 Beta][7]
+
+Like many others, I originally chose Pixel (and Nexus before it) for the "pure Android experience". But with time, that's becoming the "pure Google experience" instead. They are not the same, and that is concerning. By all accounts, Pixel 6 is on track to make quite a splash in the industry, and after years of playing sideline to Samsung, Google deserves praise for rebuilding the brand. But somehow, it just doesn't feel like Pixel anymore.
+
+Thankfully, for the time being, Android *is* still bigger than Google, and we already have alternatives like the [Asus Zenfone 8][8] picking up the baton where Pixel 5 left off. Is this the point where Google and I diverge? Only time will tell, but if nothing else, it's setup to be a fascinating year.
+
+
+  [1]: https://youtu.be/VzupAfbY8a4?t=256
+  [2]: https://www.youtube.com/watch?v=L7c4wS7T_T8
+  [3]: https://www.macworld.co.uk/cmsdata/reviews/3647343/google_pixel_vs_iphone_7_thumb800.jpg
+  [4]: https://techcrunch.com/2020/05/13/top-members-of-googles-pixel-team-have-left-the-company/
+  [5]: https://www.theverge.com/2020/3/3/21152774/big-tech-regulation-antitrust-ftc-facebook-google-amazon-apple-youtube
+  [6]: /content/images/20210523143243-pixel6-compilation.jpg
+  [7]: /content/images/20210523143647-android-12-beta.jpg
+  [8]: https://www.gsmarena.com/asus_zenfone_8-10893.php
