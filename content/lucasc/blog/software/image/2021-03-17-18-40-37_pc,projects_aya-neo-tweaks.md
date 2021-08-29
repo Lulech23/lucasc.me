@@ -38,7 +38,7 @@ Normally, projection settings can be easily accessed via the Win + P keyboard sh
 
 Which mode you want to use will likely depend on what content you're projecting. The Vega GPU in the AMD 4500U is more than capable of playing back 4K video on an external display, in which case you will need to extend or disable the internal screen to reach full resolution. Games, however, may be better off sticking to a lower resolution. As always, the advantage of being a PC is that the choice is yours.
 
-I've compiled a complete set of shortcuts which you can download below. Or, create your own shortcut pointing to `C:WindowsSystem32DisplaySwitch.exe` followed by the argument `/clone`, `/extend`, `/external`, or `/internal`.
+I've compiled a complete set of shortcuts which you can download below. Or, create your own shortcut pointing to `C:\Windows\System32\DisplaySwitch.exe` followed by the argument `/clone`, `/extend`, `/external`, or `/internal`.
 
 [Download DisplaySwitch Shortcuts](/share/DisplaySwitch.zip "superclick")
 
