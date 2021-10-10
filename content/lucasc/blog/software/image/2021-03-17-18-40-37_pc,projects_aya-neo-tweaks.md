@@ -18,9 +18,11 @@ On this page, you'll find a collection of tweaks and add-ons I've created to imp
  - [Optimized Power Profiles](#powercfg)
  - [ReplaceOSK + TabTipProxy](#replaceosk)
  - [WindowShade (Formerly BluePill)](#windowshade)
+ - [WinShot](#winshot)
 
 #### Other Recommended Tools
  - [AyaGyroAiming](https://github.com/Valkirie/AyaGyroAiming)
+ - [Project SBC](https://github.com/project-sbc/Power-Control-Panel)
 
  
 # Tweaks & Add-ons
@@ -38,7 +40,7 @@ Normally, projection settings can be easily accessed via the Win + P keyboard sh
 
 Which mode you want to use will likely depend on what content you're projecting. The Vega GPU in the AMD 4500U is more than capable of playing back 4K video on an external display, in which case you will need to extend or disable the internal screen to reach full resolution. Games, however, may be better off sticking to a lower resolution. As always, the advantage of being a PC is that the choice is yours.
 
-I've compiled a complete set of shortcuts which you can download below. Or, create your own shortcut pointing to `C:\Windows\System32\DisplaySwitch.exe` followed by the argument `/clone`, `/extend`, `/external`, or `/internal`.
+I've compiled a complete set of shortcuts which you can download below. Or, create your own shortcut pointing to `C:WindowsSystem32DisplaySwitch.exe` followed by the argument `/clone`, `/extend`, `/external`, or `/internal`.
 
 [Download DisplaySwitch Shortcuts](/share/DisplaySwitch.zip "superclick")
 
@@ -106,3 +108,16 @@ Proper calibration is not simple, requires lots of time, and the tools are somew
 WindowShade also supports applying custom .icc/.icm/.icz files via commandline argument, making this a tool useful for any PC!
 
 [Download WindowShade](https://github.com/Lulech23/WindowShade "superclick")
+
+---
+
+## 📸 WinShot {#winshot}
+In 2013, Sony unveiled an unexpected change to the DualShock controller for PlayStation 4: a dedicated Share button. Ever since then, I've been hooked. Chronicling the journey in images and video clips has become an integral part of playing a videogame for me. The memories are just as real and just as nostalgic as a real photo album, often serving as reminders of the real-world context in which they were created.
+
+But just like real photos, the moment is often gone before you can capture it. Without that dedicated Share button, that is.
+
+Enter WinShot: a universal screen capture solution for PC games. WinShot transforms the Windows key on your Aya Neo (or physical keyboard) into a one-touch solution for capturing screenshots and video clips via the Xbox Game Bar. Long-press to capture a screenshot, or double-press to start/stop recording video in the active window. And don't worry: a quick single-press will still activate the Start menu like always.
+
+Using the Xbox Game Bar means your captures will be saved regardless of what game launcher you're using, and you can even cloud sync the results across devices with OneDrive!
+
+[Download WinShot](https://github.com/Lulech23/WinShot "superclick")
